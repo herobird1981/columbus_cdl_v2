@@ -1,0 +1,8 @@
+usb_host_mass.c:34:12:do_usb_host_start	8	static
+usb_host_mass.c:23:5:usb_host_init	0	static
+usb_host_mass.c:29:6:usb_host_exit	0	static
+usb_host_mass.c:57:5:usb_host_start	8	static
+usb_host_mass.c:67:5:usb_host_stop	8	static
+usb_host_mass.c:75:5:usb_host_reset	8	static
+usb_host_mass.c:83:5:usb_host_write	24	static
+usb_host_mass.c:112:5:usb_host_read	24	static

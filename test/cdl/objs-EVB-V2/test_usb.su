@@ -1,0 +1,15 @@
+test_usb.c:660:12:usb	16	static
+test_usb.c:395:12:usb_host_mass_fix	32	static
+test_usb.c:270:12:usb_host_mass	64	static
+test_usb.c:136:12:ums_test	16	static
+test_usb.c:20:12:cmd_help	0	static
+test_usb.c:489:6:usb_int_handler	24	static
+test_usb.c:27:5:dev_mass_read_sector	8	static
+test_usb.c:47:5:dev_mass_write_sector	8	static
+test_usb.c:69:5:dev_mass_init	32	static
+test_usb.c:558:12:usb_int	32	static
+test_usb.c:198:12:usb_dev_mass	16	static
+test_usb.c:117:15:dev_mass_get_lba	0	static
+test_usb.c:694:5:usb_test_prepare	24	static
+test_usb.c:729:6:usb_reset_test	24	static
+test_usb.c:766:6:usb_cg_test	24	static

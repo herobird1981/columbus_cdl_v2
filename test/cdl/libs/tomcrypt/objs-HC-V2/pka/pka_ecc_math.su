@@ -1,0 +1,6 @@
+pka_ecc_math.c:11:5:pka_ecc_pmul	32	static
+pka_ecc_math.c:42:5:pka_ecc_padd	32	static
+pka_ecc_math.c:65:5:pka_ecc_shamir	32	static
+pka_ecc_math.c:94:5:pka_ecc_pdbl	32	static
+pka_ecc_math.c:115:5:pka_ecc_pverf	32	static
+pka_ecc_math.c:138:5:pka_is_a_m3	32	static

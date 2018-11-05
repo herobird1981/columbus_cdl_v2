@@ -1,0 +1,11 @@
+pka_ctrl.c:10:6:pka_dump_regs	16	static
+pka_ctrl.c:36:6:pka_set_reg_base	16	static
+pka_ctrl.c:50:6:pka_wr_op_blk	40	static
+pka_ctrl.c:70:6:pka_rd_op_blk	40	static
+pka_ctrl.c:90:5:log2i	24	static
+pka_ctrl.c:109:6:is_part_radix	16	static
+pka_ctrl.c:122:6:pka_ctrl	40	static
+pka_ctrl.c:147:5:pka_pre_check	16	static
+pka_ctrl.c:169:6:pka_do_clr	4	static
+pka_ctrl.c:176:5:pka_run_func_no_clr	24	static
+pka_ctrl.c:202:5:pka_run_func	24	static

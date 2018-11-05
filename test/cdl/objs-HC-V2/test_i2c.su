@@ -1,0 +1,14 @@
+test_i2c.c:654:12:i2c_int_slave	32	static
+test_i2c.c:50:12:i2c_slave	32	static
+test_i2c.c:571:12:i2c_int_master	40	static
+test_i2c.c:710:12:i2c_real	48	static
+test_i2c.c:345:12:i2c_robust	64	static
+test_i2c.c:234:12:i2c_master2	48	static
+test_i2c.c:101:12:i2c_master	64	static
+test_i2c.c:45:12:cmd_help	0	static
+test_i2c.c:479:6:i2c_master_int_test_ISR	24	static
+test_i2c.c:514:6:i2c_slave_int_test_ISR	24	static
+test_i2c.c:563:6:i2c_slave_int_handler	0	static
+test_i2c.c:868:5:i2c_test_prepare	16	static
+test_i2c.c:923:6:i2c_reset_test	24	static
+test_i2c.c:965:6:i2c_cg_test	24	static

@@ -1,0 +1,16 @@
+vsprintf.c:139:23:put_dec	72	static
+vsprintf.c:171:14:number	128	static
+vsprintf.c:503:12:vsnprintf_internal	72	static
+vsprintf.c:745:5:vsnprintf	0	static
+vsprintf.c:750:5:vscnprintf	8	static
+vsprintf.c:767:5:snprintf	16	static
+vsprintf.c:779:5:scnprintf	16	static
+vsprintf.c:804:5:vsprintf	0	static
+vsprintf.c:809:5:sprintf	12	static
+vsprintf.c:842:5:vprintf	520	static
+vsprintf.c:859:6:__assert_fail	16	static
+vsprintf.c:866:6:__assert_func	16	static
+vsprintf.c:874:7:simple_itoa	16	static
+vsprintf.c:891:6:print_grouped_ull	56	static
+vsprintf.c:910:6:str2off	24	static
+vsprintf.c:918:6:str2long	24	static

@@ -1,0 +1,5 @@
+mu_descs.c:24:16:MUSB_FindDescriptor	32	static
+mu_descs.c:70:9:MUSB_CountAlternates	32	static
+mu_descs.c:115:33:MUSB_FindInterfaceDescriptor	32	static
+mu_descs.c:191:32:MUSB_FindEndpointDescriptor	24	static
+mu_descs.c:204:16:MUSB_FindDescriptorInBlock	40	static

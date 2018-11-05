@@ -1,0 +1,9 @@
+part.c:61:26:get_dev_hwpart	48	static
+part.c:104:19:get_dev	16	static
+part.c:137:17:lba512_muldiv	32	static
+part.c:147:6:dev_print	64	static
+part.c:253:6:init_part	16	static
+part.c:338:6:print_part	16	static
+part.c:386:5:get_partition_info	24	static
+part.c:452:5:get_device	48	static
+part.c:514:5:get_device_and_partition	136	static

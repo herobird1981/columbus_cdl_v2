@@ -1,0 +1,13 @@
+cdl_usb.c:11:6:usb_enable_int	0	static
+cdl_usb.c:15:6:usb_enable_tx_ep_int	0	static
+cdl_usb.c:19:6:usb_enable_rx_ep_int	0	static
+cdl_usb.c:23:15:usb_get_int_status	0	static
+cdl_usb.c:30:6:usb_aux_vdt_enable	0	static
+cdl_usb.c:43:6:usb_aux_vdt_disable	0	static
+cdl_usb.c:56:6:usb_aux_int_enable	0	static
+cdl_usb.c:74:6:usb_aux_int_disable	0	static
+cdl_usb.c:92:5:usb_aux_int_mask_get	0	static
+cdl_usb.c:104:5:usb_aux_int_status_get	0	static
+cdl_usb.c:116:6:usb_aux_int_status_clear	0	static
+cdl_usb.c:134:5:usb_aux_id_debounce_get	0	static
+cdl_usb.c:146:6:usb_aux_id_debounce_set	0	static

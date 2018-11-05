@@ -1,0 +1,14 @@
+cdl_ddr.c:3691:13:update_slice_param.part.0	0	static
+cdl_ddr.c:32:6:ddr_var_init	16	static
+cdl_ddr.c:40:6:ddr_set_clk	16	static
+cdl_ddr.c:2223:6:ddr_ctrl_config	36	static
+cdl_ddr.c:3480:6:ddr_phy_config	32	static
+cdl_ddr.c:3545:6:ddr_extra_config	8	static
+cdl_ddr.c:3609:6:ddr_scram_ctrl	8	static
+cdl_ddr.c:3631:6:ddr_rng_data_load	24	static
+cdl_ddr.c:3660:6:ddr_ctrl_start	8	static
+cdl_ddr.c:3767:12:ddr_init_pll	16	static
+cdl_ddr.c:3724:6:reset_IO	0	static
+cdl_ddr.c:3873:9:cal_opt_val	8	static
+cdl_ddr.c:3933:5:ddr_init_0	80	static
+cdl_ddr.c:4042:5:ddr_scan	16	static

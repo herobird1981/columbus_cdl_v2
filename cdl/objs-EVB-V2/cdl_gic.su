@@ -1,0 +1,6 @@
+cdl_gic.c:116:5:gic_init	24	static
+cdl_gic.c:155:6:gic_enable_interrupt	0	static
+cdl_gic.c:167:6:gic_disable_interrupt	0	static
+cdl_gic.c:179:6:gic_clear_interrupt	0	static
+cdl_gic.c:195:6:gic_dispatch_interrupt	16	static
+cdl_gic.c:235:5:gic_configure_interrupt	8	static

@@ -1,0 +1,4 @@
+cmdline.c:20:5:cmdline_to_argv	40	static
+cmdline.c:78:5:cmdline_process	32	static
+cmdline.c:158:5:cmdline_help_general	16	static
+cmdline.c:172:15:get_arg_ulong	32	static

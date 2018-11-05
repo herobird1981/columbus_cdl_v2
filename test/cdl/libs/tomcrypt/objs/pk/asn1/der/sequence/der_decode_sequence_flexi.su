@@ -1,0 +1,2 @@
+der_decode_sequence_flexi.c:20:22:fetch_length	32	static
+der_decode_sequence_flexi.c:63:5:der_decode_sequence_flexi	56	static

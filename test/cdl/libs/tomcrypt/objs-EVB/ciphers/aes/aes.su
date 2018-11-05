@@ -1,0 +1,6 @@
+aes.c:726:6:rijndael_done	0	static
+aes.c:288:5:rijndael_ecb_encrypt	64	static
+aes.c:467:5:rijndael_ecb_decrypt	64	static
+aes.c:122:5:rijndael_setup	64	static
+aes.c:639:5:rijndael_test	552	static
+aes.c:737:5:rijndael_keysize	8	static

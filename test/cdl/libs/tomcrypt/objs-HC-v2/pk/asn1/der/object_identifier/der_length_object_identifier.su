@@ -1,0 +1,2 @@
+der_length_object_identifier.c:20:15:der_object_identifier_bits	24	static
+der_length_object_identifier.c:40:5:der_length_object_identifier	40	static

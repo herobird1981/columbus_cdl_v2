@@ -1,0 +1,4 @@
+pka_tests.c:26:6:pka_rom_dump	16	static
+pka_tests.c:39:6:ecc_192_multi_hc	32	static
+pka_tests.c:57:6:pka_test_modadd_1	64	static
+pka_tests.c:69:6:pka_test_modadd_2	464	static

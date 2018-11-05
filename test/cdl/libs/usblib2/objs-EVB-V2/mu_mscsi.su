@@ -1,0 +1,14 @@
+mu_mscsi.c:775:16:MGC_ScsiCmdSetGetReadCmd	12	static
+mu_mscsi.c:801:16:MGC_ScsiCmdSetGetWriteCmd	12	static
+mu_mscsi.c:836:16:MGC_ScsiCmdSetFormatDevice	0	static
+mu_mscsi.c:847:16:MGC_ScsiCmdSetAbortFormat	0	static
+mu_mscsi.c:857:13:MGC_ScsiCmdSetParseInterrupt	0	static
+mu_mscsi.c:866:16:MGC_ScsiCmdSetCheckMedium	64	static
+mu_mscsi.c:193:13:MGC_ScsiCmdComplete	432	static
+mu_mscsi.c:760:16:MGC_ScsiCmdSetUnmountDevice	56	static
+mu_mscsi.c:692:16:MGC_ScsiCmdSetDiscoverDevice	56	static
+mu_mscsi.c:188:13:MGC_ScsiCmdSetDestroyInstance	0	static
+mu_mscsi.c:176:14:MGC_ScsiCmdSetCreateInstance	16	static
+mu_mscsi.c:732:16:MGC_ScsiCmdSetMountDevice	56	static
+mu_mscsi.c:826:16:MGC_ScsiCmdSetFlushDevice	0	static
+mu_mscsi.c:171:16:MGC_GetScsiCmdSet	0	static

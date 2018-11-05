@@ -1,0 +1,15 @@
+/*------------------------------------------------------------------------------------------------*/
+/*                                                                                                */
+/*           Copyright (C) 2016 Brite Semiconductor Co., Ltd. All rights reserved.                */
+/*                                                                                                */
+/*------------------------------------------------------------------------------------------------*/
+
+
+#ifndef _LINUX_LINUX_STRING_H_
+#define _LINUX_LINUX_STRING_H_
+
+extern char* skip_spaces( const char* );
+
+extern char* strim( char* );
+
+#endif

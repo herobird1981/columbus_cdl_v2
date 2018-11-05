@@ -1,0 +1,5 @@
+sha1.c:47:13:sha1_compress	360	static
+sha1.c:165:5:sha1_init	16	static
+sha1.c:185:1:sha1_process	32	static
+sha1.c:193:5:sha1_done	80	static
+sha1.c:245:6:sha1_test	248	static

@@ -1,0 +1,9 @@
+cdl_wdt.c:95:5:wdt_init	32	static
+cdl_wdt.c:169:6:wdt_set_options	16	static
+cdl_wdt.c:194:6:wdt_start	8	static
+cdl_wdt.c:235:6:wdt_stop	0	static
+cdl_wdt.c:254:6:wdt_restart	0	static
+cdl_wdt.c:276:5:wdt_is_enabled	0	static
+cdl_wdt.c:300:15:wdt_get_counter	0	static
+cdl_wdt.c:318:5:wdt_get_int_status	0	static
+cdl_wdt.c:336:6:wdt_clear_int_status	0	static

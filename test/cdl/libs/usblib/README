@@ -1,0 +1,14 @@
+usblib
+---------------------------------
+inc: internal header files
+src: driver code
+include: export apis
+objs: temporal dir for compile
+---------------------------------
+support features:
+usb host function
+usb device function
+
+host: mass storage class
+device: mass storage class
+

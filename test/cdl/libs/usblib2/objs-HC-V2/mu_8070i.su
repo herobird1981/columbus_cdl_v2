@@ -1,0 +1,14 @@
+mu_8070i.c:171:16:MGC_GetSff8070iCmdSet	4	static
+mu_8070i.c:176:14:MGC_Sff8070iCmdSetCreateInstance	24	static
+mu_8070i.c:188:13:MGC_Sff8070iCmdSetDestroyInstance	16	static
+mu_8070i.c:193:13:MGC_Sff8070iCmdComplete	480	static
+mu_8070i.c:651:16:MGC_Sff8070iCmdSetDiscoverDevice	72	static
+mu_8070i.c:691:16:MGC_Sff8070iCmdSetMountDevice	72	static
+mu_8070i.c:720:16:MGC_Sff8070iCmdSetUnmountDevice	72	static
+mu_8070i.c:735:16:MGC_Sff8070iCmdSetGetReadCmd	32	static
+mu_8070i.c:763:16:MGC_Sff8070iCmdSetGetWriteCmd	32	static
+mu_8070i.c:790:16:MGC_Sff8070iCmdSetFlushDevice	24	static
+mu_8070i.c:800:16:MGC_Sff8070iCmdSetFormatDevice	24	static
+mu_8070i.c:811:16:MGC_Sff8070iCmdSetAbortFormat	24	static
+mu_8070i.c:821:13:MGC_Sff8070iCmdSetParseInterrupt	24	static
+mu_8070i.c:830:16:MGC_Sff8070iCmdSetCheckMedium	72	static

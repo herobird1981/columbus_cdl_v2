@@ -1,0 +1,6 @@
+mu_mapi.c:264:6:MUSB_MsdDisconnect	16	static
+mu_mapi.c:158:1:MUSB_MsdConnect	56	static
+mu_mapi.c:328:13:MGC_MsdSetConfigCallback	4	static
+mu_mapi.c:100:10:MGC_FillStorageClassPeripheralList	8	static
+mu_mapi.c:108:10:MUSB_FillMsdPeripheralList	24	static
+mu_mapi.c:129:20:MUSB_GetStorageClassDriver	0	static

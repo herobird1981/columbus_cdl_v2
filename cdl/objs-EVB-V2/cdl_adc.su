@@ -1,0 +1,16 @@
+cdl_adc.c:13:15:adc_read	0	static
+cdl_adc.c:18:6:adc_write	0	static
+cdl_adc.c:23:6:adc_enable_channel	0	static
+cdl_adc.c:38:6:adc_enable	0	static
+cdl_adc.c:49:6:adc_start	0	static
+cdl_adc.c:64:6:adc_power_down	0	static
+cdl_adc.c:74:6:adc_internal_buffer_enable	0	static
+cdl_adc.c:85:6:adc_clear_fifo	0	static
+cdl_adc.c:97:6:adc_set_mode	0	static
+cdl_adc.c:109:5:adc_read_single_data	8	static
+cdl_adc.c:146:5:adc_wait_dma_transfer_done	4	static
+cdl_adc.c:153:5:adc_read_cont_data	48	static
+cdl_adc.c:162:15:adc_get_int_status	0	static
+cdl_adc.c:167:6:adc_enable_interrupt	0	static
+cdl_adc.c:171:6:adc_clear_interrupt	0	static
+cdl_adc.c:176:6:adc_init	32	static

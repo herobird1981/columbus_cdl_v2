@@ -1,0 +1,17 @@
+mu_cntlr.c:108:6:MUSB_SetDiagnosticLevel	16	static
+mu_cntlr.c:118:13:MGC_ControllerInit	24	static
+mu_cntlr.c:144:17:MGC_DiscoverController	24	static
+mu_cntlr.c:199:18:MUSB_NewController	56	static
+mu_cntlr.c:553:10:MUSB_SetControllerHostPower	24	static
+mu_cntlr.c:573:10:MUSB_StartController	24	static
+mu_cntlr.c:610:10:MUSB_StopController	24	static
+mu_cntlr.c:636:10:MUSB_DestroyController	24	static
+mu_cntlr.c:667:10:MUSB_CountPorts	4	static
+mu_cntlr.c:673:12:MUSB_GetPort	24	static
+mu_cntlr.c:693:9:MUSB_DeactivateClient	24	static
+mu_cntlr.c:710:10:MUSB_GetBusFrame	24	static
+mu_cntlr.c:721:6:MUSB_SuspendBus	40	static
+mu_cntlr.c:764:6:MUSB_ResumeBus	24	static
+mu_cntlr.c:796:10:MUSB_AllocDmaBuffer	16	static
+mu_cntlr.c:870:6:MUSB_FreeDmaBuffer	16	static
+mu_cntlr.c:917:23:MGC_AllocateDynamicFifo	400	static

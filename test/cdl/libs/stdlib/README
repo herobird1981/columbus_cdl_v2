@@ -1,0 +1,14 @@
+stdlib
+----------
+include libc string relative functions: 
+	memcpy,memset...
+	strcpy,strlen,strcmp,...
+	crc32
+	cmdline process function
+	string to integer
+	random generator
+	software div
+----------
+not include memory management:
+  malloc,free...
+  also strdup() called malloc(),don't support

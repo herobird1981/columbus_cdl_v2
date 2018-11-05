@@ -1,0 +1,6 @@
+test_rng.c:103:12:rng_manual_more	32	static
+test_rng.c:58:12:cmd_help	0	static
+test_rng.c:62:12:rng_manual	16	static
+test_rng.c:146:12:rng_quality	56	static
+test_rng.c:219:6:rng_reset_test	16	static
+test_rng.c:254:6:rng_cg_test	16	static

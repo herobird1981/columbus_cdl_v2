@@ -1,0 +1,6 @@
+mu_stack.c:22:13:MUSB_StackInit	40	static
+mu_stack.c:52:9:MUSB_StackClear	8	static
+mu_stack.c:62:15:MUSB_StackSize	0	static
+mu_stack.c:71:7:MUSB_StackTop	0	static
+mu_stack.c:80:9:MUSB_StackPop	16	static
+mu_stack.c:92:9:MUSB_StackPush	24	static

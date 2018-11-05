@@ -1,0 +1,12 @@
+test_mmc.c:24:12:mmc_init	32	static
+test_mmc.c:270:12:mmc_multi_robust	64	static
+test_mmc.c:191:12:mmc_multi	56	static
+test_mmc.c:117:12:mmc_single	56	static
+test_mmc.c:19:12:cmd_help	0	static
+test_mmc.c:376:6:mmc_int_handler	16	static
+test_mmc.c:453:12:mmc_int	24	static
+test_mmc.c:100:12:mmc_probe	8	static
+test_mmc.c:508:12:mmc_read	48	static
+test_mmc.c:577:5:mmc_test_prepare	32	static
+test_mmc.c:602:6:mmc_reset_test	24	static
+test_mmc.c:640:6:mmc_cg_test	24	static

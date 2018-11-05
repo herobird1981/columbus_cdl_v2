@@ -1,0 +1,153 @@
+diff --git a/cdl/src/cdl_rtc.c b/cdl/src/cdl_rtc.c
+index a091cb0..422c4e3 100755
+--- a/cdl/src/cdl_rtc.c
++++ b/cdl/src/cdl_rtc.c
+@@ -66,7 +66,7 @@ static inline bool is_leap_year(unsigned int year)
+ 
+ unsigned long mktime(const unsigned int year0, const unsigned int mon0,
+ 	const unsigned int day, const unsigned int hour, const unsigned int min,
+-	const unsigned int sec)
++	const unsigned int sec, const unsigned int sec_100th)
+ {
+ 	unsigned int mon = mon0, year = year0;
+ 
+@@ -76,13 +76,15 @@ unsigned long mktime(const unsigned int year0, const unsigned int mon0,
+ 		year -= 1;
+ 	}
+ 
+-	return ((((unsigned long)
++	return (((((unsigned long)
+ 	(year / 4 - year / 100 + year / 400 + 367 * mon / 12 + day) + year *
+ 		365 -
+ 		719499) *
+ 		24 +
+ 		hour /* now have hours */) *
+-		60 + min /* now have minutes */) * 60 + sec; /* finally seconds */
++		60 + min /* now have minutes */) * 
++		60 + sec /* now have seconds */) *
++		100 + sec_100th /*finally have 100th sec*/);
+ }
+ 
+ /*
+@@ -101,12 +103,12 @@ int rtc_year_days(unsigned int day, unsigned int month, unsigned int year)
+ 	return rtc_ydays[is_leap_year(year)][month] + day - 1;
+ }
+ 
+-int check_time(int year, int month, int day, int hour, int min, int sec)
++int check_time(int year, int month, int day, int hour, int min, int sec, int sec_100th)
+ {
+ 	if ((year < 1970) || (year > 2099) || (month < 1) || (month > 12) ||
+ 		(day < 1) || (day > 31) || (hour < 0) || (hour > 23) ||
+-		(min <	0) || (min > 59) || (sec < 0) || (sec > 59) ||
+-		((month == 2) && (day > 29)) ||
++		(min <	0) || (min > 59) || (sec < 0) || (sec > 59) || 
++		(sec_100th < 0) || (sec_100th > 99)||((month == 2) && (day > 29)) ||
+ 		(!((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) &&
+ 		((month == 2) && (day > 28)))) {
+ 		return -1;
+@@ -161,11 +163,11 @@ void rtc_time_to_tm(unsigned long time, struct rtc_time* tm)
+ 	tm->tm_mon = month;
+ 	tm->tm_mday = days + 1;
+ 
+-	tm->tm_hour = time / 3600;
+-	time -= tm->tm_hour * 3600;
+-	tm->tm_min = time / 60;
+-	tm->tm_sec = time - tm->tm_min * 60;
+-
++	tm->tm_hour = time / 360000;
++	time -= tm->tm_hour * 360000;
++	tm->tm_min = time / 6000;
++	tm->tm_sec = time - tm->tm_min * 6000;
++	tm->tm_100thsec = time - tm->tm_sec;
+ 	tm->tm_isdst = 0;
+ }
+ 
+@@ -228,6 +230,11 @@ static u8 rtc_read_100thsec(void)
+ 	return val;
+ }
+ 
++static void rtc_write_100thsec(u8 val)
++{
++	brite_rtc_write(p_rtc, RTC_100THSEC, val);
++}
++
+ static u8 rtc_read_sec(void)
+ {
+ 	u8 val;
+@@ -451,6 +458,7 @@ void brite_rtc_gettime(struct rtc_time* tm)
+ /*set rtc time*/
+ void brite_rtc_settime(struct rtc_time* tm)
+ {
++	rtc_trim_ctrl(RTC_TRIM_DIS);
+ 	start_rtc_write();
+ 
+ 	int year = tm->tm_year - 100;
+@@ -461,6 +469,7 @@ void brite_rtc_settime(struct rtc_time* tm)
+ 		year = tm->tm_year;
+ 	}
+ 
++	rtc_write_100thsec(tm->tm_100thsec);
+ 	rtc_write_sec(bin2bcd(tm->tm_sec));
+ 	rtc_write_min(bin2bcd(tm->tm_min));
+ 	rtc_write_hour(bin2bcd(tm->tm_hour));
+@@ -469,6 +478,7 @@ void brite_rtc_settime(struct rtc_time* tm)
+ 	rtc_write_cen_month(bin2bcd(tm->tm_mon + 1));
+ 	rtc_write_year(bin2bcd(year));
+ 	stop_rtc_write();
++	rtc_trim_ctrl(RTC_TRIM_EN);
+ }
+ 
+ /*Sun=0, Mon=1...Sat=6*/
+diff --git a/test/cdl/src/test_rtc.c b/test/cdl/src/test_rtc.c
+index 10ecf11..da06f43 100755
+--- a/test/cdl/src/test_rtc.c
++++ b/test/cdl/src/test_rtc.c
+@@ -117,16 +117,16 @@ int rtc_get_mode_hour(const char *mode_str, bool is_set, RTC_MODE_HOUR12_24 *mod
+ static int rtc_set_time(int argc, char *argv[])
+ {
+ 	uint32_t test_time = 0;
+-	int sec = 0, min = 0, hour = 0, week = 0, day = 0, cen_month = 0, year = 0;
++	int sec_100th = 0, sec = 0, min = 0, hour = 0, week = 0, day = 0, cen_month = 0, year = 0;
+ 	int ret = 0;
+ 	RTC_MODE_HOUR12_24 mode = 0;
+ 
+ 	info("%s\n", __func__);
+ 
+ 	// Check the validity of parameter count
+-	if (argc < 7) 
++	if (argc < 9) 
+ 	{
+-		info("wrong cmd_format: %s mode year month day hour min sec.\n"
++		info("wrong cmd_format: %s mode year month day hour min sec 100thsec.\n"
+ 				"mode: am|pm|24h\n", argv[0]);
+ 		return 0;
+ 	}
+@@ -138,15 +138,16 @@ static int rtc_set_time(int argc, char *argv[])
+ 	hour = get_arg_ulong(argv[5]);
+ 	min = get_arg_ulong(argv[6]);
+ 	sec = get_arg_ulong(argv[7]);
++	sec_100th = get_arg_ulong(argv[8]);
+ 	
+ 	if(rtc_get_mode_hour(argv[1], true, &mode, &hour))
+ 		return -1;
+ 
+-	info("%d/%d/%d  %d:%d:%d\n", year, cen_month, day, hour, min, sec);
++	info("%d/%d/%d  %d:%d:%d\n", year, cen_month, day, hour, min, sec, sec_100th);
+ 
+ 	memset(&rtc_tm_test, 0, sizeof(struct rtc_time));
+ 
+-	ret = check_time(year, cen_month, day, hour, min, sec);
++	ret = check_time(year, cen_month, day, hour, min, sec, sec_100th);
+ 	if(ret < 0)
+ 	{
+ 		info("invalid date time, please input right time.\n");
+@@ -154,8 +155,7 @@ static int rtc_set_time(int argc, char *argv[])
+ 		return 0;
+ 	}
+ 
+-
+-	test_time = mktime(year, cen_month, day, hour, min, sec);
++	test_time = mktime(year, cen_month, day, hour, min, sec, sec_100th);
+ 
+ 	brite_rtc_init(RTC_BASE, mode);
+ 

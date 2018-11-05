@@ -1,0 +1,12 @@
+console.c:109:6:console_init	16	static
+console.c:123:6:console_reinit_baud	24	static
+console.c:135:5:console_tstc	8	static
+console.c:144:6:console_flush	8	static
+console.c:148:15:console_baud	4	static
+console.c:152:6:console_putc	16	static
+console.c:167:6:console_getc	8	static
+console.c:176:6:console_puts	16	static
+console.c:186:5:console_gets	24	static
+console.c:283:5:console_printf	16	static
+console.c:303:5:printf	16	static
+console.c:322:5:console_check_char	24	static

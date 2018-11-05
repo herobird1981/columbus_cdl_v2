@@ -1,0 +1,14 @@
+spi_flash.c:27:12:sf_read_write	40	static
+spi_flash.c:103:12:read_sr	32	static
+spi_flash.c:72:12:get_feature	32	static
+spi_flash.c:197:12:sf_cmd_wait_ready	64	static
+spi_flash.c:259:12:read_cr	32	static
+spi_flash.c:87:12:set_feature	32	static
+spi_flash.c:337:12:mx_quad_enable	16	static
+spi_flash.c:321:12:mx_disable_wp	16	static
+spi_flash.c:18:5:sf_set_controller	16	static
+spi_flash.c:379:5:sf_probe	56	static
+spi_flash.c:490:5:sf_read	56	static
+spi_flash.c:592:5:sf_write	64	static
+spi_flash.c:676:5:sf_erase	56	static
+spi_flash.c:742:5:sf_protect	0	static

@@ -1,0 +1,2 @@
+usbstring.c:18:12:utf8_to_utf16le	48	static
+usbstring.c:106:1:usb_gadget_get_string	40	static

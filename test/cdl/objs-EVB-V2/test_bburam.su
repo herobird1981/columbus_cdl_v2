@@ -1,0 +1,4 @@
+test_bburam.c:114:12:bram_data_compare	24	static
+test_bburam.c:18:12:cmd_help	0	static
+test_bburam.c:23:12:bram_writes_test	24	static
+test_bburam.c:72:12:bram_reads_test	24	static

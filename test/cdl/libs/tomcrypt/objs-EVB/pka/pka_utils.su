@@ -1,0 +1,3 @@
+pka_utils.c:4:6:print_hex	32	static
+pka_utils.c:32:6:dmb	0	static
+pka_utils.c:37:6:mpz_rm_lead0	4	static

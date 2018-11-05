@@ -1,0 +1,20 @@
+cdl (common driver library)
+-----------------------------------
+inc : internal include header files
+src : cdl driver code
+include : export apis
+objs: temporal dirs for compile
+
+-----------------------------------
+support peripheral:
+uart
+watch dog timer
+gpio
+gic
+dmac
+i2c
+mmc
+nand flash controller
+spi
+qspi
+usb

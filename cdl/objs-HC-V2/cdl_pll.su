@@ -1,0 +1,7 @@
+cdl_pll.c:1153:5:clk_get_parent_rate	0	static
+cdl_pll.c:1157:5:uart_tune_clk_for_baud	0	static
+cdl_pll.c:1161:5:console_pclk_change_cb	0	static
+cdl_pll.c:1165:5:system_timer_pclk_change_cb	0	static
+cdl_pll.c:1169:6:clk_register_callback	0	static
+cdl_pll.c:1172:5:brite_get_uart_clk_div	0	static
+cdl_pll.c:1176:6:brite_get_all_clock_rate	0	static

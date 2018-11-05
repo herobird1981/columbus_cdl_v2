@@ -1,0 +1,3466 @@
+[33mcommit d6aec3d128ac37ea1a73b800c20da6852ad0437f[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Oct 31 12:58:31 2017 +0800
+
+    add UART_TUNE_ONLY_ONE_PORT_WORK for tune pll modify
+
+[33mcommit fcc42e81508e69a2d6683963195686e43701223a[m
+Merge: 6835f88 e0d028b
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Oct 31 09:41:15 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 6835f8802975e4a1d5e01c92cb37d707462afbd8[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Oct 31 09:39:40 2017 +0800
+
+    fix bburam wrtie delay issue;
+
+[33mcommit e0d028b625ba108946c5e1e253605df278bb50ef[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Oct 27 14:02:11 2017 +0800
+
+    add error type
+
+[33mcommit c6b6cff694cc26f878e48d9c0a2de421aa29fa3f[m
+Merge: 76c361f 6949524
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Oct 24 22:29:36 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 76c361f4f961e0045953fae8585abb77fa91b9b5[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Oct 24 22:29:26 2017 +0800
+
+    add version date information;
+
+[33mcommit 694952445809d6aa080bad2d8b1e665fbe1a7e4c[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue Oct 24 19:06:14 2017 +0800
+
+    fix winbond read fail after hw reset on bugzilla #1014
+
+[33mcommit 9386b0f7d04d89aa83a1939ea2ae8987532abd50[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Oct 24 11:50:59 2017 +0800
+
+    clear house keeping done as initial stage;
+
+[33mcommit 57a6953291960a3b549ea37e1cdc1162eacd3c02[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Oct 23 16:49:44 2017 +0800
+
+    fix bug1010--add memory free function
+
+[33mcommit 3f1e2e6b5794e1acaf01bb0a17dac2fa669a280b[m
+Merge: 5482dc1 3876a1c
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Mon Oct 16 09:51:39 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 5482dc10bc8a1bc7d8c36b73fec2a90725bc1c21[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Mon Oct 16 09:51:17 2017 +0800
+
+    add one test case for epf;
+
+[33mcommit 3876a1cbc662ff837b0952e083ce824623573266[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Oct 13 11:28:48 2017 +0800
+
+    1. add qspi_nand_page_read_without_oob() to read data without oob
+    2. fix correct oob pos in qspi_ecc_test()
+
+[33mcommit 42155c4080e56011f3eef079ce6107f0073e3a2f[m
+Merge: eb2f10d 241b25b
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Oct 11 18:11:56 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit eb2f10d086635fee4973fe4618c96d35fe15fea8[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Oct 11 18:11:44 2017 +0800
+
+    revert adc workaround solution to previous version:mdelay;
+
+[33mcommit 241b25b448a78b58bee7f6c8c79d87383059ce80[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Oct 11 16:57:31 2017 +0800
+
+    1. add qspi_ecc_test() to test main page and oob ecc
+    2. add read oob in qspi_nand_page_read()
+    3. add write oob in qspi_nand_page_write()
+
+[33mcommit af7745c2fd0bb6bc93814f493aabd4b41450f96c[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Oct 11 14:40:58 2017 +0800
+
+    add new case for 4 uart port tx to observe 115200/460800/921600/3686400 baudrate;
+
+[33mcommit 61a14d70c14048a8af0ea8a5b79227ab1d824f3c[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Mon Oct 2 09:48:27 2017 +0800
+
+            Release version: 2017-10-2
+    	release info:  all of change is conduct for B0 FPGA verification.
+            1. Change IPC free timer setting side from RF to ARM.
+    	2. Add a test case to show RTC calibration mode & value.
+    	3. Add test suite for TRNG.
+    	4. Correct SPI clock/phase definition.
+    	5. Add 'Timer Capture Mode Test With GPIO' case in timer sheet.
+    	6. Change timer frequency division parameter based on latest
+    	design spec.
+    	7. Add 100thsec input parameter in RTC related functions.
+    	8. Some bugzilla issues fixing.
+
+[33mcommit 81eeb23a154db1e3dacdd6d498ff427956e74995[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Sun Oct 1 12:09:43 2017 +0800
+
+    add otp sw reset functin
+
+[33mcommit 1585d5e43026da910f95e4e1fbe9623d4303b8bd[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Sun Oct 1 11:28:48 2017 +0800
+
+    update build time tag for 2nd fpga version
+
+[33mcommit b392f1840774cdda55547aaa2dc09172a2387f5f[m
+Merge: c0c62ba 8c3e912
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Sat Sep 30 15:46:34 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit c0c62ba85f99ad7e7b918b5e751d7d36f6b848f2[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Sat Sep 30 15:46:27 2017 +0800
+
+    add 100thsec alarm function
+
+[33mcommit 8c3e912634d5f0cb902f6ac0b61232e1721db0dd[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Sat Sep 30 15:22:46 2017 +0800
+
+    Remove i2c2 test item from test list for fpga platform
+
+[33mcommit 164ddc06d32cd085e4f7a0655ff79f83a6daa1cc[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Sat Sep 30 13:47:36 2017 +0800
+
+    add HC_FPGA_BOARD_V2 for rtc compatible EVB
+
+[33mcommit 4d078237cec5019cf6a012d06855f8a9d6cbbe65[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Sat Sep 30 11:24:52 2017 +0800
+
+    rm debug info
+
+[33mcommit 47433be7f309df930de7fef83d45816b427b1b27[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Sat Sep 30 11:23:57 2017 +0800
+
+    update rtc write 100thsec function
+
+[33mcommit 6f46dbe7aaed24f2df3b45eedacda593ec2de60e[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Sep 29 14:52:57 2017 +0800
+
+    fix 64bit printf issue
+
+[33mcommit 28d0f46d1df31750f8993d4c0d4dd3a300fc163b[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Wed Sep 27 09:28:12 2017 +0800
+
+    Add a macro to distinguish otp prgm disable in otp_config_show func
+
+[33mcommit 1317d771be57dd1b22002ca70a4d8b649c2a9d38[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Sep 26 17:22:39 2017 +0800
+
+    Modify ums_test reset function
+
+[33mcommit a79fcf6349a3e92fedfd8fb6e179ccc6cfa8cef6[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Sep 22 17:15:31 2017 +0800
+
+            Release Version: 2017-09-22
+    
+    	Release info:
+    	1. Add a test case to show RTC calibration mode & value.
+    	2. Modify RNG test case input parameters.
+    	3. Adjust sram destination address in DMA m2m test.
+    	4. Correct SPI clock/phase definition.
+    	5. Optimize I/O drive strength test case.
+    	6. Add 'Timer Capture Mode Test With GPIO' case in timer sheet.
+    	7. Some bugzilla issues fixing.
+
+[33mcommit bf2b3cd9d2a2f085a26d1856b7f327f9309d1dc1[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Sep 22 12:17:57 2017 +0800
+
+    fix 1st capture value is not correct issue in timer;
+
+[33mcommit df50c2f3cd9c792514ee7d2fa169c74e05bdaceb[m
+Merge: b886b2e e9895e9
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Sep 22 12:17:21 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit b886b2e9e98ddf1074d455f9521fec5c925b4a25[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Sep 22 12:16:33 2017 +0800
+
+    adjust gpio output per itron suggestion;
+
+[33mcommit e9895e9dd518e6ab52412c65cf045979ba1fa2bc[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Sep 22 11:28:19 2017 +0800
+
+    fix evb issue for api rng_test
+
+[33mcommit 43c6b39e6949559d86c5cdc9338e5278304a3e1f[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Sep 21 15:25:40 2017 +0800
+
+    revert rng reset issue patch
+
+[33mcommit e54711265846a10fcdfa1393e74c2398ab264615[m
+Merge: 73f5a3e f05e905
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Sep 21 13:39:21 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 73f5a3ee6f771d16f41064663301daa98d497010[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Sep 21 13:38:35 2017 +0800
+
+    fix rng reset issue;
+
+[33mcommit f05e90572930f17ce555e1e5aa5c0a131cc66104[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Sep 21 10:42:18 2017 +0800
+
+    fix timer overflow issue
+
+[33mcommit b3e8b8d10b73a5219e2e30bb5a635a0a70517656[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Sep 21 09:44:30 2017 +0800
+
+    extern the delay time between reset and recovery to make rng or other module could back safetly;
+
+[33mcommit 3aefed7b8cb63ba6d9ac7fe8332ef4132a6a2194[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Sep 20 19:01:00 2017 +0800
+
+    remove dhrystone for it should be implemented in linux platform;
+
+[33mcommit 79648901ba52504690d0d2b874ab8ecf91c994a4[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Sep 20 18:25:07 2017 +0800
+
+    fix cdl_timer save and restore
+
+[33mcommit ea92b2af253465ab8ff37dd2d3bf5c32bcf62313[m
+Merge: 641ae3d 130a703
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Sep 15 14:03:53 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 641ae3dbf6f74f07e5dbc2ab6ece52303092c205[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Sep 15 14:03:41 2017 +0800
+
+    fix dma failure issue after dma reset test in sys;
+
+[33mcommit 130a703553a3c7bbb8cce51539194f3ab1f5d789[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Sep 12 17:09:00 2017 +0800
+
+    [api]Add misc for kernel api test
+
+[33mcommit 3bda7649be146fa9cde54052052e3670d09f2b01[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Sep 8 10:53:36 2017 +0800
+
+    Update CDL version tag in log
+
+[33mcommit b3446c97d06afc6da4ca3ee13d17847212af5398[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Sep 8 10:32:11 2017 +0800
+
+    fix for evb version
+
+[33mcommit d8253053cf23a3a5f18411201f60db2f744e1f17[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Thu Sep 7 18:49:25 2017 +0800
+
+    fix saradc clock divider bug according to spec update;
+
+[33mcommit db83a86056d9340048c93580774a2f74f753b921[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Sep 7 18:05:44 2017 +0800
+
+    add hw key4
+
+[33mcommit ba3e396ff2b294b3cda3bc59a2ebadb9dbf4dcb9[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Aug 30 17:27:46 2017 +0800
+
+    add usb id debounce count parameter to usb_int
+
+[33mcommit 9ffd1d40c0914920a23c5545cdf7a8839719454c[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Aug 29 14:40:30 2017 +0800
+
+    [USB]Modify usb id debounce function from test_usb.c to main.c
+
+[33mcommit d8ce2520c5f6f11c26b5fcce5579861be80e5743[m
+Merge: 2bb5d24 54b3b41
+Author: Edbert Hu <edberth@brite.local>
+Date:   Fri Aug 25 14:27:42 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 2bb5d247f227a07226e38fa0ecf6181271054bb9[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Fri Aug 25 14:27:11 2017 +0800
+
+    fix lastest cache update issue;
+
+[33mcommit 54b3b41da2067c09a07d24ed9a434b5921715a1f[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Aug 25 14:17:07 2017 +0800
+
+    [USB]Add modify id debounce count support
+
+[33mcommit 13a4f232c1eb9c3650064dadbf896f2aabc026f2[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Aug 25 10:36:00 2017 +0800
+
+    modify defaut pll from 48M to 50M
+
+[33mcommit 05db87d5dd5e6d8189b4b27fb945f34726561817[m
+Merge: 24574f3 eb7b9b8
+Author: Edbert Hu <edberth@brite.local>
+Date:   Thu Aug 24 19:59:27 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 24574f31a81a73e24c3c2763b969533670925608[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Thu Aug 24 19:59:03 2017 +0800
+
+    bug 812;
+
+[33mcommit eb7b9b8ab7f406bfd69518562445e59732bc2bec[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Aug 24 18:42:33 2017 +0800
+
+    add gtimer save and restore register function
+
+[33mcommit 91ed621f8a829b2d16eb83799f617c467a617774[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Thu Aug 24 17:16:07 2017 +0800
+
+    update per #812 request;
+
+[33mcommit bb6833e746ac952d7d833844ae09f957036e8212[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Thu Aug 24 16:44:29 2017 +0800
+
+    commit dhrystone source code;
+
+[33mcommit f3e29c0cf63f6496058095c94e09598393200c1d[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Wed Aug 23 15:22:02 2017 +0800
+
+    add dhrystone in sys test catalog;
+
+[33mcommit 00f0507f41e0cf62ef5e7404f863d2a005557206[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Mon Aug 21 17:55:04 2017 +0800
+
+    fix bug #859 and not support bit 1/2/3 interrupt;
+
+[33mcommit 08b7301a43117e78fc5109bc8e73e734cf040895[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Aug 21 15:56:55 2017 +0800
+
+    fix timer reset caused issue
+
+[33mcommit b75073d330386463eece3e18a9defdabf3e39463[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Mon Aug 21 14:38:02 2017 +0800
+
+    Correct some typos in DMA test log
+
+[33mcommit 0709a976d84ee12112133f526e10c4f6954a2854[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Aug 21 12:57:12 2017 +0800
+
+    fix aes issue:
+
+[33mcommit 6ad4eafae155ed9e81b97fec142673869d7ad958[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Mon Aug 21 09:47:24 2017 +0800
+
+    fix bug #858 which remove old trng for HW change;
+
+[33mcommit 118bc90c2b22b5f5f24ded1c4a3954ab9ea3450d[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Aug 17 17:42:36 2017 +0800
+
+    enable rng manual quit function
+
+[33mcommit 00903ec0c7ed1e271d328cbb2cae290fdcb2d619[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Aug 17 15:20:07 2017 +0800
+
+    fix image verify issue
+
+[33mcommit 0aef9e1585f521489d065e5c3e0338dd90ed236d[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Aug 16 15:17:43 2017 +0800
+
+    Update OTP driver to support backup function
+
+[33mcommit ea55fb5f26b94c41b233f48772465a93b19dd2e4[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Aug 14 10:50:51 2017 +0800
+
+    fix compile error
+
+[33mcommit 053070f688d9284dba856a51164faffe6f646923[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Aug 14 10:00:07 2017 +0800
+
+    add otp byte0-byte3 backup support
+
+[33mcommit e92ecf87848e4a07a975c3eae70adc75d237309e[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Mon Aug 14 08:44:04 2017 +0800
+
+    1. add sdelay function; 2. update free running timer for HW change as A7 set this ip;
+
+[33mcommit 8ef1db8b1e9a515b04d0ec9f409d76f4681a3b38[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Fri Aug 11 22:26:21 2017 +0800
+
+    fix issue per Yang Yu's suggestion for timer_div;
+
+[33mcommit a320a4c860ac1853b360f99302fceb3a7141de0b[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Fri Aug 11 17:33:13 2017 +0800
+
+    update timer_capture_gpio for show the freq;
+
+[33mcommit 7c694ab99b1681f4cfd7a7f99375573e69c8ca29[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Fri Aug 11 17:25:39 2017 +0800
+
+    add timer_capture_gpio per Itron request to measure capture functionality;
+
+[33mcommit a8fa81c8eb46a7bcd52cc018819886552e69b3f8[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Fri Aug 11 15:57:21 2017 +0800
+
+    add rtc calibration parameter show function;
+
+[33mcommit b72db8442dc25681cb452d3951becee60ed572ea[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Fri Aug 11 14:35:21 2017 +0800
+
+    disable the i/d cache in default;
+
+[33mcommit 0dc6a98dbe81add4c743ff889757e96c0acc5a7a[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Aug 11 14:12:20 2017 +0800
+
+    1.use gtimer not ipc timer; 2.add rom timer restore after timer test
+
+[33mcommit 5ab7ff660e934377bf607ae75d8f37e4539fd325[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Thu Aug 10 18:15:25 2017 +0800
+
+    enable dcache; please comment the #define DCACHE_ENABLE in main.c if you want to debug;
+
+[33mcommit e8bc74edb7e8e96bac6eb274b92949391f18d80b[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Wed Aug 9 18:05:53 2017 +0800
+
+    change compiling optimization level from O0 to O2
+
+[33mcommit 749e3cb3ec13ee1d5a8d2f7301e920552d93d756[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Wed Aug 9 14:13:17 2017 +0800
+
+    correct nfc/qspi block number display error in logs
+
+[33mcommit b82c541a81752b32720d191ba8ca63937a8fff2a[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Mon Aug 7 13:06:01 2017 +0800
+
+    add dwc rng;
+
+[33mcommit eefca7b109bef1ccb55e440770b47ff858eada23[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Aug 3 16:26:19 2017 +0800
+
+    Remove useless test parameter from otp_key_disable test
+
+[33mcommit cbc1f97170f1d69862631f77930467a68cea5a9d[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Jul 28 16:05:19 2017 +0800
+
+    [ecc]in FPGAV2 using OTP key4
+
+[33mcommit eff99f03bf9d0603a6f0ce506fc77e2a43b30902[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Jul 27 17:24:38 2017 +0800
+
+    Correct typo in API test
+
+[33mcommit e6086930a27c5440df28ba68a68166881d872c83[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Jul 27 13:44:11 2017 +0800
+
+    keep ARM default reset vector to 0x0
+
+[33mcommit 7732c1b37516604834f4c5ef53d53c2ef7d1b267[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Jul 27 10:44:38 2017 +0800
+
+    modify the info
+
+[33mcommit 30013313d5ac208df1f6a41be52eb88185d22f9d[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue Jul 25 11:24:34 2017 +0800
+
+    Add more log info for RF free timer test
+
+[33mcommit 78fc78c7e987a66f51c24b168bfc6fee82dff0bc[m
+Merge: 36d127e 31d3a92
+Author: Edbert Hu <edberth@brite.local>
+Date:   Tue Jul 25 09:07:26 2017 +0800
+
+    fix issue 790 for B0 HW support to access freetimer's mode and prescaler now; resolve the commit confliction;
+
+[33mcommit 36d127eb3565faf9b15edda914b3c31cd0bfacbf[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Tue Jul 25 08:54:02 2017 +0800
+
+    fix issue 790 for B0 HW support to access freetimer's mode and prescaler now;
+
+[33mcommit 31d3a9210923a82118d6cac391478e9e5fbedd74[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Mon Jul 24 18:58:31 2017 +0800
+
+    Fix bugzilla 790 for ARM side
+
+[33mcommit 460a5103a16eaab53f69ef224c95aff5fb7ba5dd[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Jul 12 10:18:09 2017 +0800
+
+    [OTP]revert the otp code
+
+[33mcommit 055d1586af5559136ac8879671ee8f7796b8ac23[m
+Merge: 09f48e9 5f05df1
+Author: Edbert Hu <edberth@brite.local>
+Date:   Tue Jul 11 17:49:14 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 09f48e9cc7a8050d5ba949c53c6e4e2e57f475b7[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Tue Jul 11 17:48:45 2017 +0800
+
+    fix report pass issue when otp reset not support;
+
+[33mcommit 5f05df1211f2e21c6febb0ae0cfa70b30bc68610[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Jul 11 17:35:50 2017 +0800
+
+    [OTP]Delete some unused code
+
+[33mcommit 802ec168a5f7b24f12af0e48182a572bbe36110e[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Tue Jul 11 17:21:04 2017 +0800
+
+    remove otp reset test case for HW not support it;
+
+[33mcommit bb670bfc105554bca22c2297123c73e44d873484[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Thu Jul 6 20:27:38 2017 +0800
+
+    fix otp test case bug according to dsp side;
+
+[33mcommit 2ecd8a615aabdb27aa33fd7f878ffabe86ec3545[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Jul 6 18:06:47 2017 +0800
+
+    [OTP]ecc key4 is hw key, shouldn't be disable
+
+[33mcommit 359305847450b29e1fa83866025735518807827a[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Jul 6 13:14:30 2017 +0800
+
+    [usb]Add ID debounce count support
+
+[33mcommit 67e734ac026894ddc012b6a6bb6db7cd2cabcd48[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Jul 6 09:44:03 2017 +0800
+
+    fix timer div test issue
+
+[33mcommit 245a7b06541435935532fb2cddd37f6561c00079[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Jul 5 15:18:36 2017 +0800
+
+    [timer]update timer driver according to tapeout2 spec
+
+[33mcommit c44790733ddcb83538c4549eb37165a26fea95f4[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Jul 4 15:19:41 2017 +0800
+
+    [PLL]Add arm rom clk support
+
+[33mcommit 195ef8775f4693ca94e7642a7352705420ee286b[m
+Merge: c54709a 5b8c020
+Author: Edbert Hu <edberth@brite.local>
+Date:   Fri Jun 30 15:20:02 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit c54709ac5934a42263d22b4ee0ed7c8a88b3d9c5[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Fri Jun 30 15:16:44 2017 +0800
+
+    fix otp test case bug
+
+[33mcommit 5b8c020800fef9597073f9dcc3ed2f9a14d7b14d[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Jun 30 10:25:38 2017 +0800
+
+    Add a set of macro to distinguish fpga & asic in cdl testing menu
+
+[33mcommit 1170ab6716f0c39656c4de107659563be3ed01d2[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Wed Jun 28 19:10:14 2017 +0800
+
+    add (hw) tips for key4;
+
+[33mcommit 8e18878428dcd57f2ed1c817d093418bfc4ed056[m
+Merge: f70fa5f f31d2c0
+Author: Edbert Hu <edberth@brite.local>
+Date:   Wed Jun 28 19:00:59 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit f70fa5f4081c28352b4ab4ad17a21e673f8d8a78[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Wed Jun 28 19:00:50 2017 +0800
+
+    fix key_disable hung up the cpu bug #729; align code to dsp side;
+
+[33mcommit f31d2c0b2a557ed3e42d3257ababfccd7f478d21[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Jun 28 18:00:17 2017 +0800
+
+    [API]Add get_boot_interface api
+
+[33mcommit 8051aebe18aef15ad2d559102beb2ef669e2ec68[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Wed Jun 28 17:57:16 2017 +0800
+
+    Fix RNG bug
+
+[33mcommit 3dbfc33bc2e1578f3e9d22ccdb52778038bddd36[m
+Merge: 4b03969 08d47af
+Author: Edbert Hu <edberth@brite.local>
+Date:   Wed Jun 28 17:24:44 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 4b039696aed04c3c5eca24462fe9a988cb03c741[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Wed Jun 28 17:24:26 2017 +0800
+
+    update rng driver and test case for spec update;
+
+[33mcommit 08d47afbe1316fba67af919c400f3df36b4c98d0[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Jun 28 16:56:35 2017 +0800
+
+    [API]Porting ecc sign and verify from boot rom
+
+[33mcommit d9a874205f525a1796c674a16ec686c4c9cd1cb1[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Jun 27 18:05:17 2017 +0800
+
+    [USB]Add usb id detect int test
+
+[33mcommit c7e939528f88df7cd1b6cec1247b05ebec247ad3[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Tue Jun 27 16:15:15 2017 +0800
+
+    1. add HC_FPGA_BOARD_V2 which used to diff to EVB/FPGA version; 2. update OTP driver and test case according to 2nd RTL; 3. update DMA handshake definition and DMAC assignment according to 2nd RTL(AES/I2C); 4. add DMA abort test case to verify DMA abort function added in 2nd RTL; 5. update ipc but not tested;
+
+[33mcommit 066ae02c6b9745cc7903965f5c0e230c9d3539d8[m
+Author: Edbert Hu <edberth@brite.local>
+Date:   Wed Jun 21 16:50:21 2017 +0800
+
+    update uart_transfer to monitor the parity error;
+
+[33mcommit d7c48e158d31f02da4bc1945293cd486eee8899d[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Jun 21 15:47:55 2017 +0800
+
+    fix io driving strength test case to support 4mA and 8mA
+
+[33mcommit 44f204de15ab8754afaed34abfbf5e4935e798e4[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Jun 19 14:56:22 2017 +0800
+
+    [USB]Modify USB reset time to 10ms
+
+[33mcommit aac9164e1dd684bd16e08f901f047a1d72bc05fb[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Jun 16 18:36:57 2017 +0800
+
+      Release v2017.06.16
+    
+      Change log:
+      1. Add memory dump function in PRCM test suite.
+    2. Add UART register dump function in UART test suite.
+    3. Add 'tamp_read' & 'tamp_count_clear' test cases in Tamper test suite.
+    4. Correct 'rtc_get_time' command description in RTC test suite.
+    5. Remove same SARADC test case.
+    6. Add test pattern in UART DMA test case.
+    7. Modify test procedures for UART DMA test case.
+    8. Correct console log error for sha256 test case.
+    9. Move DDR test program from SDRAM space to DDR space, and modify related test cases in LPDDR sheet.
+    10. Add block clock gating test suite in PRCM test sheet.
+    11. Add SDMMC1 support for USB mass storage tests.
+    12. Add I/O drive strength test cases in misc test sheet.
+    13. Add clock test sheet.
+    14. Add UART interrupt tests between UART1 & UART2.
+
+[33mcommit 0638f4f1eba5e34b36154397ed500ae749491010[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Jun 16 17:40:45 2017 +0800
+
+    fix bug664
+
+[33mcommit 333df71725efd9ed51d6f345d59f840510cc7b84[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Jun 16 16:04:30 2017 +0800
+
+    [uart] modify uart dma receive timeout value for low baudrate tests
+
+[33mcommit 1e4f67bc494a7a440375179d9e42ff91127f4256[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Jun 16 15:55:15 2017 +0800
+
+    fix io strength 8mA issue
+
+[33mcommit 9f4a1bb964a9f4ac3088f81bc32029fc69c4b5c0[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Jun 16 11:14:57 2017 +0800
+
+    add qspi 2 bits write function upon the suggestion of James
+
+[33mcommit bf667d47da62ab5464033eaf1dd58bfd7ea06b56[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Jun 15 18:52:32 2017 +0800
+
+    Add ARM CDL version info
+
+[33mcommit 4b4065e648b1c7abae04e172047ab9acb5b1749c[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Jun 15 18:14:07 2017 +0800
+
+    [dma] Fine-tune uart dma receive timeout value
+
+[33mcommit 547c54b776e4f3819358b0824bf541f1a54709bf[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Jun 15 16:04:57 2017 +0800
+
+    [DMA]Fix bug#665
+
+[33mcommit 6255eb924ee60db08816f1584b3ba8546e2ccaad[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Jun 15 16:04:16 2017 +0800
+
+    [UART] Fix bug#661
+
+[33mcommit 8815e69ad6528254a0b36ca568b928a5645ef171[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Jun 15 13:56:37 2017 +0800
+
+    [i2c]Add a special test case(i2c_master2), which is designed for i2c slave interrupt test
+
+[33mcommit 55e8090083f26eb0af8016e762189a90b8e3f46e[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Jun 15 10:37:05 2017 +0800
+
+    fix dma_cfg display issue;
+
+[33mcommit 3bac9d6b92ec1e1931fa0de1910940659f976421[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Jun 14 16:29:19 2017 +0800
+
+    fix confusion change for test_spi.c;
+
+[33mcommit 90474d211b1450641a7525a17107f5fd392c8152[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Wed Jun 14 15:11:24 2017 +0800
+
+    [i2c] Modify test parameters for i2c master/slave interrupt tests
+
+[33mcommit fd4dacafcc43154ca5ff9395c52681bab0787934[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Jun 14 13:39:19 2017 +0800
+
+    update for bug #656 to let the meaning of spi mode paramter is same to qspi;
+
+[33mcommit ed67fb6557ccc032dc27603c1c9faef8e4d2efae[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Jun 14 11:12:45 2017 +0800
+
+    fix last version's compile error issue;
+
+[33mcommit 3a2ec38127c74a3a8983eb4650dc2db8498dbc40[m
+Merge: 2170bf7 9425e22
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Jun 14 10:42:07 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 2170bf732680ba1f5b77f3bf9e94c6e1aec82950[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Jun 14 10:41:39 2017 +0800
+
+    for bug#618
+
+[33mcommit 9425e22c8cf4fd5e5c9718df5154e174a6346591[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue Jun 13 20:32:33 2017 +0800
+
+    [PLL] Make ROSC as valid PLL clock source input since current rosc clock is not trimmed for PLL tests
+
+[33mcommit 20dd40a3fe06e42bc54a6d7c4f56ed65ce2bd19a[m
+Merge: eb92260 767f58c
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Jun 13 18:41:17 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit eb9226059d9505443fa7885921ac98dcc2a531c9[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Jun 13 18:41:02 2017 +0800
+
+    support only single mode dma for avoid saradc data overflow issue;
+
+[33mcommit 767f58c50cbf55123dd317f347cd97fe8cf223d4[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue Jun 13 11:23:01 2017 +0800
+
+    add gpio output in io driving strength function
+
+[33mcommit 5f86221292291ae580dd8298252869562ef3c6db[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue Jun 13 10:37:46 2017 +0800
+
+    fix pclk clock gate function
+
+[33mcommit 5fed8057385bfaf4e247e150470c48af6e70f566[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon Jun 12 17:05:45 2017 +0800
+
+    add misc io strength driving function
+
+[33mcommit 4c5c7b6ba4408719c1d32d2e806029e0b5dca662[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Jun 12 15:44:59 2017 +0800
+
+    [USB]Add SRP test item
+
+[33mcommit cc8e6884e053ed810c0d31af897a544709f3c3e5[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Jun 12 15:43:47 2017 +0800
+
+    [USB]Add SRP test support
+
+[33mcommit baf4bf8a62da37f02245506ef91102983be027da[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon Jun 12 14:15:30 2017 +0800
+
+    fix ipc cg error
+
+[33mcommit b0d5a2e72735f5de1a4e894aca59c611f7d53db1[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon Jun 12 11:11:18 2017 +0800
+
+    fix rtc trim to be round-off
+
+[33mcommit 3ba94c784337d75d4535eae0b3666b8a8f8b793b[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Jun 9 18:04:14 2017 +0800
+
+    update saradc;
+
+[33mcommit 1dbd08a1b495bbd1148caf3ff1b83de282eb3be9[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Jun 9 17:25:51 2017 +0800
+
+    update saradc test case info, tip for clk_sel == 1 must be fail;
+
+[33mcommit 3e11c5892e1042cb07cbe8a67a251800c7747e47[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Jun 9 17:13:27 2017 +0800
+
+    force saradc clk sel to 0--from apb_clk; arm not support 38.4M from system;
+
+[33mcommit 5febaceb3988a9d7b49ab3a08259b12f27160351[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Jun 9 15:55:33 2017 +0800
+
+    force qspi read/write operation to be 4 bit mode by default
+
+[33mcommit 1e7476c3ef625715f2d2ffabe8bfe5eecae2cac7[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Jun 9 13:56:58 2017 +0800
+
+    fix gpio debounce pre_scaler issue
+
+[33mcommit 92e15606830560e7b34300a4511e0a431817d31c[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Jun 7 15:19:34 2017 +0800
+
+    fix gpio debounce function
+
+[33mcommit 927376a062ae839c379c041fe8d326198972dd8a[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Jun 7 11:11:52 2017 +0800
+
+    fix rtc set trim prompt
+
+[33mcommit 26b2433ab9036076cabf641e3d938cd0f99a45ee[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Jun 7 10:38:13 2017 +0800
+
+    fix rtc calibration and set trim function
+
+[33mcommit e6602193331203657823fcf45907b6734ac59d89[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue Jun 6 18:06:01 2017 +0800
+
+    [QSPI] Fix bug620 -- CSN1 issue
+
+[33mcommit 3ac4c0578f9e8c1c0fc61ed86bbe4ba2ec5d43a9[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Jun 6 17:24:54 2017 +0800
+
+    [EVB&FPGA]Confirm most functions work fine on EVB and FPGA
+
+[33mcommit 70f30718aa107e15b51b607430e10d029bd82115[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue Jun 6 15:33:08 2017 +0800
+
+    [USB] Add SDMMC1 support for USB mass storage tests
+
+[33mcommit c43dccf68d55aecd377005a1954023eee53ccd04[m
+Merge: 87cc147 002fef4
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Jun 6 12:26:11 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 87cc147d0ec3f29f381fc58422d58d38c0c64ef2[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Jun 6 12:25:48 2017 +0800
+
+    force i2c reset in i2c_robust test case
+
+[33mcommit 002fef44f86d09f8e9ba2039ed13f7cac6a944c1[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue Jun 6 10:24:25 2017 +0800
+
+    [sys] correct validity judgement for clock gating parameter input
+
+[33mcommit c1f3ca620aab71e0c0f586e689a31b095cbdd4b4[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon Jun 5 19:29:29 2017 +0800
+
+    add block clock gate function
+
+[33mcommit 4c612499abb65ea376b4a7a4f003a1ab1f0c00ed[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Mon Jun 5 18:08:15 2017 +0800
+
+    force reset i2c module before test;
+
+[33mcommit 7506db31460ba544167639a2832f55a5ec8a5371[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon Jun 5 15:21:07 2017 +0800
+
+    fix mode 1 and 2 feature in qspi test
+
+[33mcommit 8a569e46e720768c0a1c308143e64c8aae888c20[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon Jun 5 10:24:42 2017 +0800
+
+    fix syntax error in test_ddr.c
+
+[33mcommit 9438094b3b63585a3528feafcd0c42ebdb37dcb4[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Jun 2 17:45:17 2017 +0800
+
+    add arm clock gate function
+
+[33mcommit 70494e1bb23078f3e3442ca08a6455f347ba81a3[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Jun 2 17:16:20 2017 +0800
+
+    adjust i2c 100k/400k timing without loading; but 100k/400k timing is not accurate with peripheral;force to 400K if speed is set as 3.4M;
+
+[33mcommit 5c747eea1655f0dcfbe61bc8e77b55986ff91b6e[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Jun 2 15:19:03 2017 +0800
+
+    fix trim mode cycles in rtc calibration
+
+[33mcommit 25ab0c19d46b1b696c34b2c109e04274389b5bb2[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Jun 2 14:10:53 2017 +0800
+
+    [MMC]fix single random data type to int
+
+[33mcommit dec174b0884e3191e5f5c8bbe532995af7dc772d[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Jun 2 13:24:25 2017 +0800
+
+    fix rtc calibration
+
+[33mcommit bc8e5dc1cebc47a3b2b5c30e5a09dbacce298508[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Jun 2 12:24:06 2017 +0800
+
+    [MMC]Fix mmc multi len issue
+
+[33mcommit 125c8d0a4816a738c31560424680c17547187237[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Jun 2 10:22:30 2017 +0800
+
+    [saradc] mask invalid trig bit inputs
+
+[33mcommit 8eb103ca621d54313b51f94b68ca1523effb763b[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Jun 2 08:29:24 2017 +0800
+
+    [SHA] correct console log error for sha256 test case
+
+[33mcommit 483f985600369fb378080bc1dac3349ea1d59772[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Jun 1 18:55:26 2017 +0800
+
+    remove unreasonable ipc instruction and fix tamper timer bug #577
+
+[33mcommit 1c482a401cd7950fb9c2061f15776f704c8aae0b[m
+Merge: eb611e1 a8c6e69
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Jun 1 18:51:13 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit a8c6e69f57dab074eadfa3c461177983d58870b3[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Thu Jun 1 14:41:46 2017 +0800
+
+    enable trim after calibration
+
+[33mcommit 4c8213ed141d881c34b3f517a4e93499cbc9862d[m
+Author: Sunny <sunny.sun@britesemi.com>
+Date:   Thu Jun 1 09:56:31 2017 +0800
+
+    [UART] Make uart break length accurate
+
+[33mcommit eb611e13bb2e615453683a9159242c9646725929[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sat May 27 17:58:45 2017 +0800
+
+    remove int_virt
+
+[33mcommit 0b018391c1a2df5b8803aedaae1f40938b2e061f[m
+Author: U-BRITE\edberth <edberth@edberth918.brite.local>
+Date:   Sat May 27 17:48:43 2017 +0800
+
+    tmp
+
+[33mcommit b0900d64422f553b351dee5e352663956ff6d446[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Sat May 27 09:57:34 2017 +0800
+
+    add rtc_prepare() to fix bug #566
+
+[33mcommit 19220a9c87bc66a87471c9ed555805d7cdd3b968[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri May 26 18:45:46 2017 +0800
+
+    [Build] Fix make clean
+
+[33mcommit d6b2d6f5b7159d4ddf187dea5197fcdeaa75b32a[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri May 26 16:34:10 2017 +0800
+
+    ignore new output dir objs-EVB and objs-HC
+
+[33mcommit 1139a76df9fcc6fd83b9359d65f9964fbe0cbe04[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri May 26 16:26:19 2017 +0800
+
+    [Build] evb and hc build output can co-exist now
+
+[33mcommit 4ad3261c8dbb5fe09ddd6698e2411a849e642dab[m
+Merge: eef23eb 72a29bf
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri May 26 15:43:13 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 72a29bf24c77f26529d1d75dd7c381c6194d35bb[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri May 26 15:37:22 2017 +0800
+
+    [FPGA] Fix fpga version compile error
+
+[33mcommit eef23eb1a513554ef279be3e093071f4302256ce[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri May 26 15:36:47 2017 +0800
+
+    fix gpio debounce
+
+[33mcommit 2e3a2cf4ab762fd10ed387166b0f2e87f13685f8[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri May 26 15:30:09 2017 +0800
+
+    fix debounce function to be suitable with pwm input
+
+[33mcommit 4291a9ffd1907fd75cb3c6d9f36e2372657bcbe5[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri May 26 14:53:27 2017 +0800
+
+    1. Move clear bss function to start.S to avoid potential var change during clearing.
+    2. Change system timer from general timer to ipc timer to avoid overflow
+    3. Add EVB board
+
+[33mcommit 6f3a857a48f1e34fed155c48b1a7ec8cb911f910[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri May 26 11:24:08 2017 +0800
+
+    disable pd disble to fix gpio output function bug #574
+
+[33mcommit fdee5df82e13a424983bde21b13056ae71bc7a80[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Thu May 25 16:01:49 2017 +0800
+
+    delete the print in gpio handle to fix bugs on bugzilla
+
+[33mcommit 2c5cadb2961ecaf5531268886674ccb61e8d556d[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed May 24 10:22:24 2017 +0800
+
+    [UART] use console_check_char to check quit
+
+[33mcommit 09fbb38bd16151f85fdd6f539c7cebb1ac930337[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed May 24 10:06:55 2017 +0800
+
+    [PLL] Check if parent match before run callback
+    [UART] Fix set default data bits and stop bits
+
+[33mcommit c54168f0ab728b4cf1c2a41094e89b46b0053e4d[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue May 23 20:50:49 2017 +0800
+
+    fix timer id from [1,8] to [0,7], which is to fix the bug #578 on bugzilla
+
+[33mcommit cc3f3fb5ee832f63935fad03591297a577f94e85[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue May 23 19:15:21 2017 +0800
+
+    change timer_compare to interrupt mode to fix bug #560 on bugzilla
+
+[33mcommit 370a4bc3c5b267a3e3ea4fb92d21c028849f6134[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue May 23 18:20:38 2017 +0800
+
+    [UART] Remove hardcoded fraq div, fix overflow in tune function
+
+[33mcommit f4122efb4622492c013a7372721974e084702ee1[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue May 23 17:05:14 2017 +0800
+
+    delete timer_pwm output one time at a same time
+
+[33mcommit 04f12d1334f8235f34cf46db7e82e6aa1b2dcf89[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue May 23 16:50:06 2017 +0800
+
+    fix bug #558 on bugzilla
+
+[33mcommit 39372820e3d662af085a203a6aaaae4c72556d45[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue May 23 14:49:50 2017 +0800
+
+    fxi bug #561 and #562 on bugzilla
+
+[33mcommit 7f3d4b42b283c78e75797fceb44e26fb7af0f698[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon May 22 18:40:11 2017 +0800
+
+    support qspi micron nand flash function
+
+[33mcommit 881bc1552b7e06959091df472ed1febebfaae4df[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri May 19 18:16:58 2017 +0800
+
+    [USB]test_mode: add some debug info
+
+[33mcommit 88c88adf1bd745a9a55bdb07d3714f627b58a6e6[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri May 19 17:21:39 2017 +0800
+
+    support qspi winbond nand flash
+
+[33mcommit c035af592f28ec8a0e0c311ce4570a4ad4299028[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri May 19 13:05:48 2017 +0800
+
+    add general memory dump in sys catalog;
+
+[33mcommit fddffd39c6c36503ca9ffa16ee6252ac1fbe0567[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri May 19 11:46:00 2017 +0800
+
+    Fix bug577 --A 24 hour format time stamp bug was observed in the tamper module
+
+[33mcommit 05de5e6b2800641ad6cbb10109a5bc91e0cf54ac[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri May 19 10:53:12 2017 +0800
+
+    [Tamper] add tamp_read & tamp_count_clear test cases
+
+[33mcommit f0e10a99bb17810449e3173ad83e2a367c1501d0[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri May 19 09:54:28 2017 +0800
+
+    align saradc to DSP side;
+
+[33mcommit 40bb2088f00c8768cf2859a96b27ac585d15f394[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri May 19 09:48:44 2017 +0800
+
+    [UART] correct uart line break length description
+
+[33mcommit 41cb4afe8ae6adcfea258694eb632d9d409dfc8b[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu May 18 17:08:15 2017 +0800
+
+    [USB]Add test mode PID for 0x0106, 0x0107 and 0x0108 support
+
+[33mcommit 6640a5d331abf74dfd9cea9e30b608b770d921b8[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed May 17 17:38:24 2017 +0800
+
+    add ddr test function upon memtest in ddr area
+
+[33mcommit 5c823646ff204eec29b62598f7c0d0dd6b8ad668[m
+Merge: db7f2bc dbdac23
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri May 12 13:19:57 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit db7f2bc3ff68fa4e7552a6bf6d1479ad4023a2ab[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri May 12 13:19:42 2017 +0800
+
+    fix bug #546 to support multi-cycle plc special boot testing;
+
+[33mcommit dbdac239739b693edc5a4f11650d655c8a670c66[m
+Author: max.li <max.li@britesemi.com>
+Date:   Thu May 11 16:51:42 2017 +0800
+
+    mark unused include (string.h)
+
+[33mcommit 1c4ff6efd5119b2c982561b9f8b2ca5f04297b25[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu May 11 13:43:58 2017 +0800
+
+    [PLL] Fix uart abnormal during some case, fix default clk setting
+
+[33mcommit 4bc046c823befd5998dcb3a849028687428a8bd7[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue May 9 16:27:59 2017 +0800
+
+    [PLL] Fix pll freq/arm clk src swith/bus freq/perph freq test
+
+[33mcommit ee86f975103b91f413c9160ea45e477eab153b4e[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon May 8 16:33:55 2017 +0800
+
+    add pinmux in epf test function
+
+[33mcommit 41891d6f70de53659b751b0e207bd32499bd53ff[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri May 5 20:40:16 2017 +0800
+
+      Release v2017.05.05a
+    
+      Release Notes:
+            1. update ARM CDL based on PSV task list;
+            2. update ARM CDL based on Itron's feedback of v2017.04.01;
+            3. update ARM CDL based on Brite SOC/Verification
+               team's checking and feedback;
+            4. detailed chenge list is from Bug #373 to #533 (ARM CDL side);
+    	5. retag it based on de688230e6d569649a86236e35ac8cc442d335ad and
+    	02f1ae0c4c5c3bac081bcca2b50c29c6f7e26f31 for branch merge;
+
+[33mcommit de688230e6d569649a86236e35ac8cc442d335ad[m
+Merge: 02f1ae0 4d79ee5
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri May 5 20:30:47 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 02f1ae0c4c5c3bac081bcca2b50c29c6f7e26f31[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri May 5 19:59:15 2017 +0800
+
+      Release v2017.05.05
+      Release Notes:
+      1. update ARM CDL based on PSV task list;
+      2. update ARM CDL based on Itron's feedback of v2017.04.01;
+      3. update ARM CDL based on Brite SOC/Verification team's checking and
+      feedback;
+      4. detailed chenge list is from Bug #373 to #533 (ARM CDL side);
+
+[33mcommit 4d79ee525d305156ad920f62b054198e26aa46e0[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri May 5 19:43:15 2017 +0800
+
+    [aes] remove redundant log
+
+[33mcommit 0398a8d47a7326822d3e9dd917f3350f2cd7943d[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri May 5 15:15:10 2017 +0800
+
+    1. add power down transition state teste in epf test
+    2. fix arm epf test fail on bugzilla #533
+
+[33mcommit c2ae79a4e34be742bf35b90478fc9a719a2a2cd2[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu May 4 18:58:32 2017 +0800
+
+    remove unused code ipc_int_disable;
+
+[33mcommit b513b46ee6d3dbc076b1d97f38355cbd46da56f5[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu May 4 18:44:52 2017 +0800
+
+    1. remove ipc_int_disable; 2. add rng 0/1 string print;
+
+[33mcommit 020a4a73089c8b20359fe5f54d438c25a577c7b3[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed May 3 20:33:35 2017 +0800
+
+    support arguments for boot from arm case
+
+[33mcommit 49293fe7ce7d7749b3d822183f5dfe8347b62773[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed May 3 19:24:52 2017 +0800
+
+    fix rng_manual_more tips
+
+[33mcommit 87f03c52e7f66543a66d8bc103704ffd22bc7895[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed May 3 13:43:01 2017 +0800
+
+    fix rng_manual_more issue for dumpping invalid data;
+
+[33mcommit 8c8b96ae93d44e86d52b0e3ff085b909052b1992[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed May 3 13:33:27 2017 +0800
+
+    1. add adc_cm channel info log for bug #526; 2. add rng_manual_more;
+
+[33mcommit 6725693aec27a1191a98bd8b24d93f98599cc14e[m
+Merge: e14a041 37c10cf
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue May 2 18:45:43 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit e14a0410787ead28fbf066e844ba3d75844c9d62[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue May 2 18:45:35 2017 +0800
+
+    disable rtc alarm when case exit;
+
+[33mcommit 37c10cf18b4a3fd53bd21fa9fd6ee2472ba1d807[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue May 2 17:16:55 2017 +0800
+
+    [RTC] uniform mode to am/pm/12h/24h, trigger mode to y/m/d/H/M/S
+
+[33mcommit b3b2d1c1eac4aad8cadf9de97f0219cc1860fc6e[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue May 2 15:58:19 2017 +0800
+
+    limit the input for rng mode
+
+[33mcommit 4a7f2f33aa50076b20c1bdde68898eb2154b4ee4[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue May 2 15:19:34 2017 +0800
+
+    [PLL]Add more rate support
+
+[33mcommit 1d227dcea84015368b79719927cc01a31711fbfc[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue May 2 09:20:04 2017 +0800
+
+    Add test log in crc multiple test case
+
+[33mcommit ba2185d2c04a1fba3824209afc63ba081daaa4a8[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon May 1 13:21:12 2017 +0800
+
+    add free timer function upon the requirement of itron
+
+[33mcommit 2d6f22d9523a632f96a192d50bbc90da98b15f06[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sat Apr 29 23:45:16 2017 +0800
+
+    align to dsp side;
+
+[33mcommit 8841d685f1af1332c3b50cd708a4e4e648f3ecdb[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sat Apr 29 18:53:23 2017 +0800
+
+    support spi transfer more than 2048;
+
+[33mcommit 841c501f24c059fc457c4d276a2009006cc073e3[m
+Merge: 86563ea c1cdc12
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sat Apr 29 18:33:39 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 86563eaf0dcae8f47a7ba0a50c63c00ea7e89866[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sat Apr 29 18:32:54 2017 +0800
+
+    fix bug #518
+
+[33mcommit c1cdc12bc4f71070800604866ffca9133de5b06b[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Sat Apr 29 18:31:01 2017 +0800
+
+    [PLL]Modify parameter
+
+[33mcommit ad1a7986828d11e6a85c776648a6d0a70a8a726a[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Sat Apr 29 18:22:17 2017 +0800
+
+    [PLL]Modify PLL test mode
+
+[33mcommit 7eceadaf703292420cd0cc741a7b02a0467c64b4[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Sat Apr 29 17:08:15 2017 +0800
+
+    [RTC] remove useless code
+
+[33mcommit 4d6a03328dd668203b41c1a9f1931736fde36dc5[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Sat Apr 29 16:48:02 2017 +0800
+
+    [RTC] Uniform the hour value in tm to 24, add am/pm/24h to rtc set time mode
+
+[33mcommit c96c20597d49c516951eb465c353f46f2069a7fe[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Sat Apr 29 14:46:22 2017 +0800
+
+    [AES]Fix compile warning
+
+[33mcommit 3140ee9ff8d7f1a746deeaf1527af51ffe3936fa[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Sat Apr 29 14:34:23 2017 +0800
+
+    [AES]Fix ccm/gcm B buffer memleak
+
+[33mcommit bc729ebca8b8af7c12131c1beaa6aabb926c362c[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Sat Apr 29 14:32:03 2017 +0800
+
+    [WDT] show more log before reset happen
+
+[33mcommit 910b5d9b40ddc7a9e850a4488480fff5b5416688[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Sat Apr 29 11:20:03 2017 +0800
+
+    [DMA] update dma dump status function
+
+[33mcommit ac3fc944cfc4ec155a987f598c98106b24a7e012[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Sat Apr 29 11:05:50 2017 +0800
+
+    [AES]shot the log len
+
+[33mcommit ce7ff701e3ec847dd24b7a6dea783382a23bb4c3[m
+Merge: 0fd3a7c 341844d
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sat Apr 29 10:40:03 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 0fd3a7c3f437eeecdc9709d13da9702e1b0af42e[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sat Apr 29 10:39:50 2017 +0800
+
+    fix bug #517
+
+[33mcommit 341844d595104de7f04ffe7fbe843d7f3473156f[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Apr 28 20:08:53 2017 +0800
+
+    [AES]modify log len
+
+[33mcommit befab55442d6fa613bfba29db202dc27ffda0bf7[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Apr 28 19:59:48 2017 +0800
+
+    add timer pwm out parameter prompt
+
+[33mcommit 5235c5164b77b75d28050e230b18d7e24c6de013[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Apr 28 19:32:30 2017 +0800
+
+    [BBU RAM] Change row display size from 20 to 16
+
+[33mcommit 89a82dd0964648ae49f408c821af12d090b27e22[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Apr 28 18:43:59 2017 +0800
+
+    [AES]Fix name erro
+
+[33mcommit 321e803e88d66f1bf27ef79bfdca23845eceb224[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Apr 28 17:26:55 2017 +0800
+
+    fix timer capture frequency on bugzilla #504
+
+[33mcommit feb12fd6c181729c3a62977a7c4402a53b487cf7[m
+Merge: b135aa2 212463c
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Apr 28 15:06:00 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit b135aa2bb081f4a7b95882eaeae0c230ee130922[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Apr 28 15:05:32 2017 +0800
+
+    fix pwm period display issue on bugzilla #503
+
+[33mcommit 212463ce17bbde68c332c6fd92e8665ac3a9b33b[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Apr 28 14:58:45 2017 +0800
+
+    1. optimize ipc int test case; 2. add cdl version infor;
+
+[33mcommit b7a2359ae7fd4c8bdaeab987fcea3b1926e6194a[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Apr 28 14:38:54 2017 +0800
+
+    Correct log error in nand probe test
+
+[33mcommit 4d516c4b607e972a5740688a23286fee82d1dc21[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Apr 28 12:04:09 2017 +0800
+
+    [SDMMC]sd card switch to hs if card support
+
+[33mcommit 354193e1166c441b27c639298edd3fcc729a538e[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Apr 28 11:08:33 2017 +0800
+
+    [SDMMC]Add interrupt name to int test
+
+[33mcommit 78faee8b5d811f2d74822a314a3b9082fa12d991[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Apr 28 09:33:14 2017 +0800
+
+    [USB]add patten parameter to usb host
+
+[33mcommit 6210b874cb8107e3d00464a395e5c3e9b61ea65f[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Apr 28 00:50:43 2017 +0800
+
+    add crc_multiple with ccitt mode support according to itron's request;
+
+[33mcommit 8886f7bbd220861a2e326b49d82beea12693931d[m
+Merge: 9846e7c 85d0e2d
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Apr 28 00:00:29 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 9846e7c06b1ae0dfff2f6c265bc79112cec20547[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Apr 28 00:00:09 2017 +0800
+
+    fix bug #491 with add ipc_test_prepare and please note that the auto test script need update for flag 16 is not supported;
+
+[33mcommit 85d0e2d10130507ed64633cbcf5775b46faf6c0c[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Thu Apr 27 19:18:04 2017 +0800
+
+    fix timer stamp issue on bugzilla #498
+
+[33mcommit 36d373f476cc1d3feacff259c4c78d42282ff579[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Apr 27 18:55:43 2017 +0800
+
+    Correct log error in ddr test suite
+
+[33mcommit 1dad1183f6f423904570a04de7df96847ba73bdd[m
+Merge: 32d76bb fc4d069
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Apr 27 18:40:54 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 32d76bbf43bbb289f447baac6cc888801507def6[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Apr 27 18:40:39 2017 +0800
+
+    fix bug 0462
+
+[33mcommit fc4d069aa84d2e54647fffd9c1001046db7bdd3d[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Thu Apr 27 18:36:28 2017 +0800
+
+    add rtc calibration function to fix bugzilla #429
+
+[33mcommit 85e9b294ca7298d3f35d13f2c6a1840da72e8045[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Apr 27 18:26:09 2017 +0800
+
+    [WDT] Do not limit wdt int timeout deadline. warn about load_val overflow in wdt_reset
+
+[33mcommit ff9df6479329d4714ae897e5d600c6014c42e0bb[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Apr 27 18:05:05 2017 +0800
+
+    [UART] Fix uart dma mb test
+
+[33mcommit e564b2e49e21ee6d305db23bbad348d66864d10b[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Apr 27 17:52:16 2017 +0800
+
+    [AES]Modify some parameters
+
+[33mcommit cf64e6cf3ec4d55fb7aed5c4965fe5abbdd1ae64[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Thu Apr 27 15:43:12 2017 +0800
+
+    fix time pwm output at wxyz pin simultaneously
+
+[33mcommit ac160600399882ab4276ea2f0561cd0420a498d4[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Apr 27 11:36:39 2017 +0800
+
+    [AES]Fix aes multi len==0 issue
+
+[33mcommit ebe5d822ce1f5bcc2236abaa2128c703a60c4923[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Apr 27 10:48:21 2017 +0800
+
+    [AES]Modify aes driver to fix many issues
+
+[33mcommit 7a44d19e99ce298f32583344031bd0dc6584a505[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Apr 26 17:29:34 2017 +0800
+
+    [UART] Add dma block echo test for reduce data loss when no flow control
+
+[33mcommit 08c98474c6ec93f8f06aa385aa975b9cef30f14a[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Wed Apr 26 17:28:46 2017 +0800
+
+    [DMA] fine-tune DMA ddr test address space
+
+[33mcommit 05f78f248904c1a30e092f2fc0e7e87f9867ecfd[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Apr 26 15:20:23 2017 +0800
+
+    [UART] Fix bug #493, uart_dma test fail.
+    For high baud rate with large block tansfer(>64 bytes), have to enable flow control, otherwize rx fifo will overrun
+
+[33mcommit 1ae86ab2ecffa0099cf1c33bdc0dd0062186ca59[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Apr 26 13:29:52 2017 +0800
+
+    fix qspi only support phsase 0/3
+
+[33mcommit b702ea8ae98154c54b3af1c1f3c32536ee31eb6f[m
+Merge: 929c10d e20e386
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Apr 26 12:14:53 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 929c10d21b2913dd6d37ee1097904064606ab1b5[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Apr 26 12:14:35 2017 +0800
+
+    1. wrapper a spi_xfer as package one by one; 2. adc test case bug fix;
+
+[33mcommit e20e38661342a8453420be0f5cf1e97e0a525cb7[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Wed Apr 26 09:39:15 2017 +0800
+
+    [DMA interrupt test] Add prompt to avoid invalid parameters input
+
+[33mcommit ec6e3c789eb332813dad8307b50491ede3890561[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue Apr 25 17:24:57 2017 +0800
+
+    Correct log error in sha_robust test
+
+[33mcommit db8b684b0bcc918dfadfe236e38140177bd8b290[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Apr 25 15:10:47 2017 +0800
+
+    [AES]Fix ccm* issue
+
+[33mcommit 74ee1325e836ef78a89fdf481d49bb000b268983[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Apr 25 14:34:30 2017 +0800
+
+    [UART] Fix uart inproper burst size & threshold caused data loss
+
+[33mcommit c22daba69d82e3daf1de70e02cb2447e96cbf7a1[m
+Merge: 83603ae d443979
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Apr 25 10:08:18 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 83603aef9b716ba464165a269f97a7da0e742c6c[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Apr 25 10:08:02 2017 +0800
+
+    force spi slave dma mode
+
+[33mcommit d443979e2b1861c3d9618f28f261c5eb639cd33f[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Mon Apr 24 18:09:58 2017 +0800
+
+    [BBURAM] Add write offset & byte write function to BBURAM test suite
+
+[33mcommit 35a1c88a3b806b96377e166d0273c23412163b4e[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Apr 24 18:04:18 2017 +0800
+
+    [libusb2]Add full or high speed choice item
+
+[33mcommit 9683b45a81c29ad1ada5f4d3359688b4dcf87b12[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Mon Apr 24 17:52:27 2017 +0800
+
+    fix test_spi log error
+
+[33mcommit 3e157265a44cacfdac172e061f07f067ace2332f[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Apr 24 16:18:12 2017 +0800
+
+    [SDMMC]Modify emmc max transfer speed to 50M
+
+[33mcommit bae523773080c490f5665a08e0d3e53374122b57[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Apr 24 16:06:23 2017 +0800
+
+    [SDMMC/AES]Fix log issue
+
+[33mcommit cb1d25a831cc3f6d6b2b9cbd0742134ab1690072[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Apr 24 14:57:02 2017 +0800
+
+    [WDT] change wdt default div to /4096 to met basic test requirements
+
+[33mcommit 3fff3cd24b24ef4fe1c7bddf61a74447d072bde3[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Apr 24 11:39:15 2017 +0800
+
+    [SDMMC]Fix Bug 484 - [SDMMC0/1] SD card probe info error.
+
+[33mcommit 6af27e98e81d9d25702d4b7739ca5405ce5dc27f[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Apr 24 11:32:26 2017 +0800
+
+    [AES]Fix bug 480, 481 and 482 -- test fail with certain parameters
+
+[33mcommit d6c65b1ef6d5f89c10537251cca9fc7b968f0fbd[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sun Apr 23 13:03:51 2017 +0800
+
+    fix log error #486
+
+[33mcommit 82c5cddc00b2480fe13fbd9b982d62f628692a1b[m
+Merge: 4c2dd78 813fd01
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sun Apr 23 09:31:48 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 4c2dd78fb8419e80fadecf0f343c76fef29993a2[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sun Apr 23 09:31:30 2017 +0800
+
+    update dma_cfg2;
+
+[33mcommit 813fd0103a65bdbe24c6a7e69c44f7dc40c9727e[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Sat Apr 22 15:57:06 2017 +0800
+
+    fix the max qspi dividor fail issue on bugzilla #441
+
+[33mcommit 1f5c4059b873df982b7b9674a96bc56b520f43f2[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sat Apr 22 14:57:27 2017 +0800
+
+    fix dma bug #479; and fix dma bug same to DSP CDL dma bug #471;
+
+[33mcommit 1a198361550086dc2f5a89ae462401e0b1f718df[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Sat Apr 22 10:18:20 2017 +0800
+
+    add nand type on console to fix bugzilla #477
+
+[33mcommit 2bf2755d22d1bd90394e99f04c370862b1c5d3ab[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Apr 21 18:59:23 2017 +0800
+
+    fix sdio1 pinmux function
+
+[33mcommit de76cd98a373f1489199ce2c98b15ba91c5519c8[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Apr 21 18:00:02 2017 +0800
+
+    [USB]Add stop session and start session for usb interrupt test
+
+[33mcommit 392136d2a233dc99967d242b33a52ae99d58df15[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Apr 21 17:21:56 2017 +0800
+
+    Adjust DDR space for USB mass storage test according to actual DDR space(128MB) on EVB
+
+[33mcommit 973b146b258f0f5d7df8ec8c2b0e04c4acec7c74[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Apr 21 16:24:04 2017 +0800
+
+    [SDMMC]Add infomation for bus width changed
+
+[33mcommit 4d5e45a7de019066a1b2870eb796a238c1c6f66c[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Apr 21 16:16:28 2017 +0800
+
+    [U64] use cb_lldiv instead of libgcc function to fix eabihf compile fail
+
+[33mcommit 2799be16a5663af3ff35c84f6f52f9e78fa62c28[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Apr 21 16:07:27 2017 +0800
+
+    [USB]Fix Bug 464 - [USB] USB interrupt would be unexpected triggered without any plug/unplug event occurred.
+
+[33mcommit a2aaab20329f65eb352e8ef15956d8bbb9422f35[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Apr 21 15:41:24 2017 +0800
+
+    [AES]Fix Bug 458 - [AES] Some cases failed with specified parameters
+
+[33mcommit 8eceb1d9788f420049f109c52ef20be101031610[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Apr 21 14:54:12 2017 +0800
+
+    Fix SDIO1 pin mux problem
+
+[33mcommit fdedb85d6da0a5943a82762ca2c2c576c816f6ae[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Apr 21 14:35:18 2017 +0800
+
+    [WDT] Fix bug #461, calcuate wdt time by counter for div accuracy judge,
+    Add div paramter to wdt_interrupt_timeout
+
+[33mcommit 003a72e626c2ad899f7c74f629f10d4a72c7961e[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Apr 21 11:20:23 2017 +0800
+
+    [UART] Fix uart transfer fail at high baudrate
+
+[33mcommit 8ec0784cc2336a74bfc2fce2603446685098fb64[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Apr 20 21:00:10 2017 +0800
+
+    support dynamic spi frequency adjustment
+
+[33mcommit b5faea61e9be18f838e68e84106a1168bbebfff1[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Apr 20 18:18:26 2017 +0800
+
+    fix spi reg definition based on 6a6c8bb1334f9d53f0831d5e0b6e8afcdd4a387b
+
+[33mcommit 7bac125c6639c271a95894c755d36eb6088372a8[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Apr 20 14:38:20 2017 +0800
+
+    [RTC]Add parameter check
+
+[33mcommit e2de835748ad9e8aec506e4fcd9252929afbfbe5[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Apr 20 11:16:43 2017 +0800
+
+    Correct address mode display error at i2c slave side
+
+[33mcommit 528621104f655f57f5ba31f075ea8e795f0170d0[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Apr 20 11:06:04 2017 +0800
+
+    Remove speed/clock parameter from I2C slave side
+
+[33mcommit 7f70d9d0c7cf484aa27ffee0fd56e5d79cc13557[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Apr 20 09:48:03 2017 +0800
+
+    [WDT] show wdt time in decimal format, and in ms accuracy
+
+[33mcommit 329e343e6eb68242de529e622e48e030564b5fee[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Apr 19 18:23:51 2017 +0800
+
+    [WDT] Fix wdt_interrupt_timeout not accurate, timeout range in spec 1K means 1024
+
+[33mcommit 6a6c8bb1334f9d53f0831d5e0b6e8afcdd4a387b[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Apr 19 15:27:09 2017 +0800
+
+    [SPI] spi int test for specific rx threshold
+
+[33mcommit 5f25c583bf3963af35cd8b705b03277c18789072[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Apr 19 15:48:54 2017 +0800
+
+    fix qspi nand raw read and write function
+
+[33mcommit 637bf94585f2250c6e0e11f1662e7e6a6776c60b[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Apr 19 15:12:19 2017 +0800
+
+    fix spi unstable issue again with dma polling and different threshold with h/l speed
+
+[33mcommit 60d56a34a1bb170d7830398ea91e4e1ddcb9a1d6[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Apr 19 11:38:11 2017 +0800
+
+    [SDMMC]add 52M support for emmc
+
+[33mcommit f99b7233b4cd0dda95ebbf6d0213221770c527bc[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Apr 19 10:18:55 2017 +0800
+
+    [IPC]Fix bug 453 - Result incorrectly displayed when issuing get message command
+
+[33mcommit 76caf94b1aa0b3744a41b50fdfa30475e806687d[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Apr 18 19:31:09 2017 +0800
+
+    Revert "Revert "Remove redundant logs in UART test program""
+    
+    This reverts commit 26ada0fbea4e31e4359ac5fdd08d8adb0ef8134f.
+
+[33mcommit 26ada0fbea4e31e4359ac5fdd08d8adb0ef8134f[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Apr 18 19:19:36 2017 +0800
+
+    Revert "Remove redundant logs in UART test program"
+    
+    This reverts commit 79d726ff078d66a85603c70d836fd4c0f04d005f.
+
+[33mcommit 58b923b1d7901a153828aa16626a6f89151f5b8e[m
+Merge: b2e9bd3 79d726f
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Apr 18 18:16:46 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit b2e9bd3918a2f965aa0aa832a8bcc44ed24e84db[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Apr 18 18:16:32 2017 +0800
+
+    fix spi rx fifo threshold for stability;
+
+[33mcommit 79d726ff078d66a85603c70d836fd4c0f04d005f[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue Apr 18 17:26:36 2017 +0800
+
+    Remove redundant logs in UART test program
+
+[33mcommit 27752870b70a252dfd75d902ccd0951ff3b87347[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Apr 18 16:18:29 2017 +0800
+
+    [SPI]Add spi_full_duplex_robust function
+
+[33mcommit d4c6f1d549075c4ced2dc14aa603815bb1fcd056[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Apr 18 14:29:16 2017 +0800
+
+    [UART] Fix bug #452 UART loopback test fail when data bit is 5, 6, 7
+
+[33mcommit d081c6ce5e22339f5a42c74dec1fc632d3b0516c[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Apr 18 14:30:59 2017 +0800
+
+    [RTC]Add rtc_get_time_robust function
+
+[33mcommit 6819b6e754021222298d446e6a7e3a49f30d19b9[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Apr 18 13:19:34 2017 +0800
+
+    [WDT]add register dump function
+
+[33mcommit e23f488b56647d2c34dccf3b265639aa03d999c8[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Apr 18 09:25:28 2017 +0800
+
+    [USB]Fix test packet issue
+
+[33mcommit d20e912883b6609670cb4e50e6392dc25ad3b4a8[m
+Merge: 764d423 3e18883
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Mon Apr 17 17:28:14 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 764d423f0e023b066061cf846053dd00b9333c3d[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Mon Apr 17 17:27:21 2017 +0800
+
+    fix bug #439; add ip reset before each new test case step in; ignore the cdl_spi.c change;
+
+[33mcommit 3e18883db1933df9ec54256aa637a67996eb7e47[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Apr 17 12:42:41 2017 +0800
+
+    [SDMMC]Modify SDMMC sys clock to 100M
+
+[33mcommit f748d9bcd3e22b78d2e046f03f78dd6a11ebae6d[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Apr 14 17:31:51 2017 +0800
+
+    fix i2c 10bit robust test failure issue;
+
+[33mcommit 88628733f86ac9a3b864347e881ce963e7ab3eb3[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Apr 14 17:01:35 2017 +0800
+
+    fix 10bit address mode issue report from Itron
+
+[33mcommit 493f7e512bcee14ba552c0d46c8c24888ff4050d[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Apr 14 09:09:27 2017 +0800
+
+    fix 400K dma not stable issue, bug #438
+
+[33mcommit a3bae3636216e38a371e6fe6605c97a0da062b8d[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Apr 13 18:31:00 2017 +0800
+
+    fix sd 50M issue for take 500M as 50M;
+
+[33mcommit b97252661c0db9bbc6c893ba45984fad12843448[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Apr 13 17:45:51 2017 +0800
+
+    fix sd/mmc could not reach to 50M issue according to Sunny's modification;
+
+[33mcommit 0a25588b077127f3e1390f5902c955c7bc16c6b8[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Apr 13 16:11:40 2017 +0800
+
+    [UART] Force read RBR when uart_init to resolve previous potiential deadlock condition caused char timeout irq
+
+[33mcommit af307784544b46e1bbf9dfc2c18a91c1ab409edd[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Apr 12 21:30:35 2017 +0800
+
+    add uart_reg_dump; add timer_reg_dump; fix timer log not correct issue;
+
+[33mcommit df288ec03b1270d3ba851d856c9cb260df792893[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Apr 12 20:51:21 2017 +0800
+
+    fix i2c 100k/400k not accurate issue report from Itron
+
+[33mcommit 27775539e562c348e7bb92cd87ad3795f19dd4f5[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Apr 12 12:48:20 2017 +0800
+
+    update spi frequency which support 37.5M; please note that 50M should not support in ARM side currently.
+
+[33mcommit 80449a8e3cf91b2b0c4f181a3c04de53f05e5e12[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Apr 12 12:28:31 2017 +0800
+
+    [UART] Fix modem test initial value wrong
+    [WDT] show counter diff value during test
+
+[33mcommit aed90893e0362551ca285965c3beb8f2ade872c0[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue Apr 11 21:20:36 2017 +0800
+
+    move boot rom code qspi nand flash to cdl
+
+[33mcommit b1b979f7073a2d9ae3651d30972efc967a736624[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Apr 10 17:11:38 2017 +0800
+
+    [WDT] Add continously time display
+
+[33mcommit 37af4020266287a8d1a3f819eefc4f0827460d4e[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon Apr 10 16:47:06 2017 +0800
+
+    add ecc mode in nfc read page function
+
+[33mcommit c987b75b85640f785790da25b3db0cf07651db3e[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Apr 10 16:21:27 2017 +0800
+
+    [CRC] add display data option
+
+[33mcommit a0cea9c551cae3f1d3988c3729c96de0bf384d77[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Apr 10 15:09:43 2017 +0800
+
+    [UART] add rx threshold int test
+
+[33mcommit dbaccb31231b7130f6fa3058065402b6810c0299[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon Apr 10 14:48:30 2017 +0800
+
+    fix bad block check function
+
+[33mcommit b4f91dd1621841fb0b14e5ccbe36a87f5a7ba7bf[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon Apr 10 13:48:39 2017 +0800
+
+    fix nfc int issue
+
+[33mcommit 6d78b4664341a1ad2d25b4659822b73b665ac21c[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Apr 10 12:53:31 2017 +0800
+
+    [libusb2]Fix test_packet issue
+
+[33mcommit 1606c2d3d71e6c32bc199cc026ce459968bd1a36[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Apr 10 12:33:07 2017 +0800
+
+    [UART] Fix uart 3M baud external loopback caused console mal-code
+
+[33mcommit a57eb371efafa5cd2e1ee605158773ff1dbf9b89[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Sat Apr 8 22:55:55 2017 +0800
+
+    1. move the boot rom nfc code to cdl
+    2. fix bugzilla #396 and #398
+
+[33mcommit d8085eb0f295f0b9368ea9a0cc3ed3d16de48d88[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Apr 7 19:15:35 2017 +0800
+
+    Add test pattern in i2c_master/i2c_real/i2c_robust functions of i2c test suite
+
+[33mcommit 4ee5d0f3f23686bac14b37bcf3335af92ed24fb4[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Apr 7 17:04:54 2017 +0800
+
+    [UART] change modem status to match active low meaning from datasheet
+
+[33mcommit a977997871c73b277186ffc8195d3099e6659711[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Apr 7 09:15:55 2017 +0800
+
+    [UART] Fix DMA can't work with UART AFCE, deadlock when DMA burst < RTHRE
+
+[33mcommit f406cb68c131d4abab09409d9541367491270468[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Thu Apr 6 18:25:21 2017 +0800
+
+    fix gpio debounce function on bugzilla #412
+
+[33mcommit a7c3549073c5a19cc42cf8bddb8ca4060fb44520[m
+Merge: 03787de b45577e
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Apr 6 16:33:51 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 03787de927c363757f219760e76ccc22c668472d[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Apr 6 16:33:24 2017 +0800
+
+    fix bug 404 with force read_val as 0 if secret key 2/5/6 is accessed;
+
+[33mcommit b45577e567b67b874ad229f4858ceb11946293e0[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Apr 6 15:56:59 2017 +0800
+
+    fix bug 404;
+
+[33mcommit b3b3ede39c36cbe4f3e6acc861fa828e693a8731[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Apr 5 13:10:06 2017 +0800
+
+    fix chip ID check on bugzilla #422
+
+[33mcommit 3439b8a4aaae6edbdfa26798d971d5796d567de4[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Apr 5 10:28:16 2017 +0800
+
+    fix arm_debug0 and arm_debug1 function
+
+[33mcommit 2d4671671ca66a06c2eb7a978c41aca3b8a9033e[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Sat Apr 1 19:04:39 2017 +0800
+
+       Release v2017-4-1
+       Change log:
+       1. add partial PRCM function;
+       2. fix GPIO function;
+       3. fix bug #416, #377
+
+[33mcommit a227643d9d39e87c84c6ad711f9fffe912bb9802[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Sat Apr 1 11:27:02 2017 +0800
+
+    1. add test head file for adc/aes/crc/dma/ipc/mmc/nand/otp/rng/sha/spi/adc/aes/ecc ip
+    2. add prcm reset for each ip
+
+[33mcommit 0db17208bd5b8d1e17508703cf29173c0c201d44[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Sat Apr 1 11:12:31 2017 +0800
+
+    Fix bug416 - USB device mass-storage fails (micro SD card)
+
+[33mcommit 3a50139442c9725ffc0be225b664d452ef5765d8[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Mar 31 14:50:09 2017 +0800
+
+    correct prompt log for otp_test()
+
+[33mcommit aa5abb100d058c3285749b73c6e54f526bb8d68d[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Mar 31 14:40:52 2017 +0800
+
+    remove unused function in OTP
+
+[33mcommit 66d4533055cbca33c35d14c44c2043f4b00c3f1a[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Mar 30 20:44:19 2017 +0800
+
+    fix key 2/5/6 disable check for these key could not be accessed by SW;--refer to bug #377;
+
+[33mcommit 5394ac02138157067136e3a02318e54925211859[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Thu Mar 30 14:54:47 2017 +0800
+
+    1. fix gpioa[29,31] pinmux to fix bug #400
+    2. add push pull code to fix bug #415
+
+[33mcommit 422b188dc3bc96e50828ceba9263dec871e68102[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Mar 30 11:37:28 2017 +0800
+
+    add otp program status checkc according to bug #404
+
+[33mcommit f9e009c754d3cec5ed2e0dd9d345d62083872968[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Mar 29 17:28:12 2017 +0800
+
+    1. fix pi nmux/pu/pd/od with pin_init() api
+    2. add gpio pin push pull test function
+
+[33mcommit 0d9f6d2cb65b482a4a14888c1e27ea88e59acf51[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon Mar 27 15:23:00 2017 +0800
+
+    1. remove gpio_int() function form cdl
+    2. fix gpio level interrupt to trigger forever
+
+[33mcommit c71996c7bedf8f4ba68b5f9ac95f22a205b8608b[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Sun Mar 26 17:20:08 2017 +0800
+
+    1. fix gpio pinmux function.
+    2. fix gpio ABCD interrupt vector function.
+    3. add a/b/c/d to indicate port 0/1/2/3 command line
+
+[33mcommit 77a55ccac4219c2804f248229b37ff34efb55f1e[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Mar 24 17:34:24 2017 +0800
+
+      Release v2017.03.24
+    
+      Major change:
+      1. support 1st tapeout's EVB ASIC platform;
+      2. add PLL module;
+      3. add SARADC;
+      4. update some test case per Itron 2-24's request;
+
+[33mcommit 8335c625fd78ecd9426ecb4d1e063b8041399820[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Mar 24 14:32:28 2017 +0800
+
+    fix bug #376
+
+[33mcommit 41546bf286dc781a0f6d5d9d269b29c1afcd3a7b[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Thu Mar 23 16:52:29 2017 +0800
+
+    1. fix timer wxyz output prompt
+    2. fix qspi source clock from apb to axi to resolve the divider error issues.
+
+[33mcommit b39917675ab6cc4b126a735cfd4bd60d3c47cebf[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Wed Mar 22 16:20:57 2017 +0800
+
+    Fine-tune uart transfer data size
+
+[33mcommit 04712a4ee969d826caa52e2e591283f055efa57a[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Wed Mar 22 16:16:52 2017 +0800
+
+    Remove unused functions in uart test suite
+
+[33mcommit 395b0a4a75862943754f4396380229fc187aa477[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Mar 22 14:57:58 2017 +0800
+
+    1. add timer pin mux function int timer test
+    2. fix timer pwm output and capture function
+
+[33mcommit 46c33a5729895721262b327bba920c5d67a0d7f4[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue Mar 21 17:57:01 2017 +0800
+
+    1. add timer input pinmux function
+    2. add timer output pinmux function
+    3. fix i2c eprom dma write function
+
+[33mcommit b28b7cb876590db673aeabdb3a1a25aa47d97da0[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Mar 17 18:45:18 2017 +0800
+
+    add timer input pin mux function
+
+[33mcommit 77aa7f96e70f6e1ddb8637d835b9072b62b940ba[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Mar 17 13:43:49 2017 +0800
+
+    [LD] change to same ld addr as Uboot, andrew should fix this
+
+[33mcommit 4c4022e72d2d0896391981cd4b9405ebfcc8a9e4[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Mar 17 12:01:08 2017 +0800
+
+    [UART] enable only pull on CTS, move pin mux to uart_test_prepare since line break will not call uart init function
+
+[33mcommit dd5ad75d683e7a52a5bfa413bb989642c3aa17c0[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Mar 17 11:30:48 2017 +0800
+
+    fix uart echo in bg test when flow control enabled
+
+[33mcommit e256b043ab8d636d6633236da0544260e9b33b74[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Mar 17 10:15:14 2017 +0800
+
+    fix uart transfer test fail when flow control enabled.
+    Root cause:
+    when Rcv Threshold reached sysnopsys uart will pull RTS high,
+    previous set 1/4 FIFO depth is too low. set to FIFO depth - 2.
+    
+    And HW behavior is weird, Rcv Threshold should not impact RTS state if Auto HW flow control enabled.
+
+[33mcommit bbf260862729aa4e04f988fa8da6506f00f1c895[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Thu Mar 16 14:07:47 2017 +0800
+
+    add notes in test_qspi.c
+
+[33mcommit d0f16a604a7c54b741c776d31616c149e07c189f[m
+Merge: 399a135 f46131f
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Mar 16 12:50:02 2017 +0800
+
+    Merge branch 'master' of 192.168.138.42:brite_itron/columbus/arm/cdl
+
+[33mcommit 399a135337524f14e369c8053a96c26dca737ec5[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Mar 16 12:49:21 2017 +0800
+
+    change adc's data display for excel easy to parse
+
+[33mcommit f46131fc2f16cb14b977d50f365102c800df9a6e[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Mar 15 10:16:15 2017 +0800
+
+    fix instruction start address to be 0x43F80000 to be the same as u-boot
+
+[33mcommit 4e40e7f7539d5294f5ea9de5827cef111675b413[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue Mar 14 19:14:54 2017 +0800
+
+    add e2prom test function in i2c0 interface
+
+[33mcommit 69c87a987f5c55091701b389ad9a37081e9e38ac[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Mar 14 17:10:20 2017 +0800
+
+    change hex print to dec print
+
+[33mcommit 6aceb423e9c5193217a787494c2cf6db59114b02[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Mar 14 17:03:20 2017 +0800
+
+    fix tip info for saradc test case
+
+[33mcommit 8aa5756b980d401eb58da91b244800eff12bba35[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Mar 14 16:35:44 2017 +0800
+
+    add adc_clk for saradc test case
+
+[33mcommit a43d957f84024245b70fab8d0d701cc7a7c205c8[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Mar 14 15:02:32 2017 +0800
+
+    [USB]add device suspend support
+
+[33mcommit 3e935ba33ee52b71856eeedc604e7ab7ccd7c10e[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Mar 14 12:03:49 2017 +0800
+
+    [usb]ADD usb host suspend test item
+
+[33mcommit 3b90a2e811826b12952a645e13dbd0c81778827e[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Mar 13 14:26:03 2017 +0800
+
+    [MMC]fix mmc fifo mult-block read/write issue
+
+[33mcommit 84baed158fe6090ea9d7b1bea2d1e7df29e16d07[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Mar 10 18:11:31 2017 +0800
+
+    1. fix timer index from [1,8] to [0,7]
+    2. add i2c interrupt to support one board master/slave test
+    3. update and add notes to interrupt vector
+
+[33mcommit a59efd8f9d04a4be2ae3b3f3cd7812f07cd9814e[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Thu Mar 9 18:27:01 2017 +0800
+
+    Add ARM side BBU RAM test suite
+
+[33mcommit a6dd0f9c6db87842d0bf96a2a9e73af757eea4bd[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Mar 8 11:07:22 2017 +0800
+
+    1. fix qspi clock from apb0
+    2. fix qspi interrupt
+
+[33mcommit 6a917ad06066dddd9cffd6ecc3e8c114e4a6c8f4[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Mar 6 18:29:21 2017 +0800
+
+    [UMS]add HNP and SRP test support
+
+[33mcommit 923c6c6064044fe7c43b8a3e1fa8aad18f6b7087[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Mon Mar 6 10:33:21 2017 +0800
+
+    add data pattern for usb_host_mass
+
+[33mcommit 0483e1aeab707d3a63032db0aa3574834a1aea67[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Mar 3 18:24:06 2017 +0800
+
+    fix nand erase/wwite/read in test file
+
+[33mcommit 9a37307b760bbe47211543aabdaf844c462bba30[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Fri Mar 3 15:58:13 2017 +0800
+
+    update adc's continues mode with DMA data transfer
+
+[33mcommit 2f00e64bff9c734b86e95a4945d43e7a6cc62dd7[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Mar 3 10:40:57 2017 +0800
+
+    fix arm software reset
+
+[33mcommit 47da3b490c946b22e1ed431ae0310ce050668a5f[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Thu Mar 2 19:20:11 2017 +0800
+
+    add port in test_i2c.c
+
+[33mcommit 31781a6d7c58c0431e5c6a534ee8797964bd37bc[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Mar 2 18:01:20 2017 +0800
+
+    [usb]add log to libusb2 for hnp test
+
+[33mcommit cf13d90387b0748e36140937c2c1b127a218e4b5[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Mar 2 17:49:45 2017 +0800
+
+    [UART] add line break detector in background
+
+[33mcommit 6a198a27b607d5aabc70990f62559678345d9d52[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Mar 2 16:58:22 2017 +0800
+
+    [UART] implement background uart echo
+
+[33mcommit f2aaa242b7bebb66b9448266a56624bca7dad460[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Mar 2 16:40:39 2017 +0800
+
+    update timer test case per Itron request: 1. add continuosly display; 2. display '.' as regular mark;
+    3. add para in timer_int case; 4. add more default reg info display in timer_reset case;
+
+[33mcommit 968951dc6de89082ddff84aef7007f42a5bd0cdf[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Thu Mar 2 14:11:48 2017 +0800
+
+    update SARADC's drive and pass the basic test case (single mode/continues mode / DMA /INT)
+
+[33mcommit 9f6a2161831d7fbf8907469c0df5c5c0c2d5348c[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Mar 2 13:34:22 2017 +0800
+
+    1.add 1200 bardrate support; 2.fix rtc read timing issue
+
+[33mcommit 37553300b0d29af71f6d6d6c709f66a4d48cdac0[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Mar 2 11:50:28 2017 +0800
+
+    [USB]Add libusb2 for OTG test
+
+[33mcommit c985757ee15a7c315544bde60e89f07a6cb63c99[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Mar 2 11:48:58 2017 +0800
+
+    [PLL]revert my test pll file
+
+[33mcommit 45053311b1449e8e57d8c23f8476bd84363b266e[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Mar 1 17:55:41 2017 +0800
+
+    add i2c test case to support 2 ip in one board
+
+[33mcommit d08e2ad8a22cc8eb8599a8b0b731fc40f84c21ac[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Mar 1 16:05:31 2017 +0800
+
+    [PLL]Modify pll test function
+
+[33mcommit 5eb916b1c03dff435f01c840229d92b9523c29bb[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Mar 1 13:28:50 2017 +0800
+
+    delete uint32_t define
+
+[33mcommit 923d70ebb6e461f29fc3a8430f182a01d8dfe2df[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Mar 1 13:25:08 2017 +0800
+
+    fix compile error
+
+[33mcommit 551821f52eca415c5234075352279210b00f22d1[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Mar 1 11:12:39 2017 +0800
+
+    fix dma multi channel test wrong param order
+
+[33mcommit 8e6541ff6b205dea28c315a6ed86696f7d46a3c8[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Mar 1 11:03:08 2017 +0800
+
+    change dma function order to the same as dsp
+
+[33mcommit 9451b2cfe13ccd08fc3a64a0452336485e0ee160[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Feb 28 18:34:39 2017 +0800
+
+    [PLL]open default pll setting
+
+[33mcommit 9bb5e6ff9ff5d4f757f5e22ec3aecf13ecc40b77[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Tue Feb 28 18:24:39 2017 +0800
+
+    fix cdl_sys.h to fix compile issue on linux platform
+
+[33mcommit d88fce366b54009bdc9bfe7eec73dd474afa194d[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Mon Feb 27 14:30:46 2017 +0800
+
+    add pinmux for uart0/1/2/3 and gpioA/B/C/D
+
+[33mcommit eb44a32b193524626091431d40de00c4efa22264[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Sun Feb 26 17:54:49 2017 +0800
+
+    add pinmux function for spi, i2c, sdio
+
+[33mcommit 1f40c8fb96e858ee2929e9ce28fed590e9bda61d[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Fri Feb 24 16:04:13 2017 +0800
+
+    run successfully on asic platform(not re-initialize pll after boot)
+
+[33mcommit c35e7e03942986202e2289579a5b552b068b19ce[m
+Author: Billy Liang <billy.liang@britesemi.com>
+Date:   Wed Feb 22 17:46:15 2017 +0800
+
+    add ddr test function
+
+[33mcommit cbcf389f32fc91e46a6f9995a73c6a354cb44062[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Feb 22 14:46:32 2017 +0800
+
+    [PLL]Modify some PLL coding
+
+[33mcommit 589f4f992aac361ad58924efb8a0bdfecc88a8d2[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Feb 22 10:06:32 2017 +0800
+
+    [PLL]Modify CONFIG_ASIC_VERSION to 0
+
+[33mcommit da01852a739f7fa5c14b0e57c51a26c6a930348d[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Feb 21 18:41:41 2017 +0800
+
+    [PLL]Fix some issue
+
+[33mcommit 6220480fd5bbe26d703ed32e252a089de791a6a8[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Feb 21 10:53:48 2017 +0800
+
+    [PLL]Modify set rate function
+
+[33mcommit 2c010841b0b5e1111824a0b2fa0135c81028d619[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Feb 20 16:44:30 2017 +0800
+
+    [PLL] Add IPs PLL support
+
+[33mcommit ee700c2931ea926b3685b95e2440167b6a2d291c[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Feb 14 17:43:54 2017 +0800
+
+    [PLL]add ARM and DDR PLL drivers
+
+[33mcommit c52ae056ba58e7859ac9e43ef2013bf38b8cac7c[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Fri Jan 20 17:30:33 2017 +0800
+
+    [sec_api]update the secure api according to Bob's patch
+
+[33mcommit c75f9a6a68d6a2db866ba0074760f1ef177c0008[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Mon Jan 16 16:59:53 2017 +0800
+
+      Release V2016.12.28
+      Change log:
+      1. modify ccm* mlen condition;
+      2. [aes] return directly if taglen == 0;
+      3. [API] modify api according to rom;
+      4. [usb] fix usb_dev_mass 1 mmc0 issue -- some SD card;
+      5. [SDMMC] fix bug #278 Some sd card are not compatible with HC
+      platform;
+      6. [SDMMC] fix TF card compatible issue;
+
+[33mcommit 54fff26bfdccead900f98e83f50ae6eb179fb000[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Dec 27 18:00:26 2016 +0800
+
+    [SDMMC]fix TF card compatible issue
+
+[33mcommit b31e69066fad041d26f00aefba5d6fe707ab80f7[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Dec 27 13:07:48 2016 +0800
+
+    fix Bug 278 - [SDMMC] Some SD card are not compatible at current HC platform
+
+[33mcommit 7d0770bc87ed736a62830ced894c9815ba890542[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Dec 26 14:48:55 2016 +0800
+
+    [USB]fix usb_dev_mass 1 mmc0 issue --some SD card
+
+[33mcommit 03dbc3a1eb813f2efdf9df2a66d8fb6d0f56a52d[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Dec 21 15:33:58 2016 +0800
+
+    [API]modify api according to rom
+
+[33mcommit f3aca11e1138450d80b66ad1e5d5bae599a21b0e[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Mon Dec 19 15:50:11 2016 +0800
+
+    [aes]if taglen == 0, return directly
+
+[33mcommit dffac0c5c669da832ad647d0bf05d309e7470f75[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Dec 15 20:10:24 2016 +0800
+
+    [AES]modify ccm* mlen condition
+
+[33mcommit ad500aceed2d0ea6974377f8c244fa162fdb149e[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Dec 14 18:58:17 2016 +0800
+
+    [IPC]modify ipc test case
+
+[33mcommit 5a4a37c7784df5c3d9678c2a033ff0d75af8b567[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Dec 14 18:50:09 2016 +0800
+
+    reduce the test array size to fix api bug
+
+[33mcommit 4ab401ea2115e3833455688049036f0f629724a6[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Dec 14 09:59:18 2016 +0800
+
+    [API]add ecc sign verify test
+
+[33mcommit b9921b1c1f623ab8dba8e281c109d10a496a3ee3[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Dec 13 16:53:17 2016 +0800
+
+    [API]modify aes gcm mode test case
+
+[33mcommit 3ddb689add680bc2f395cd1181a0bfa9f2693939[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Tue Nov 29 10:33:16 2016 +0800
+
+    add ptr_image_header_verify api
+
+[33mcommit 32b0f2032a0bd6bedafe0e8d7e30762dfa6b105c[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Nov 29 01:58:48 2016 +0800
+
+      Release v2016.11.28
+    
+      Change log:
+      1. sync up to Brite internal Git v2016.11.28
+
+[33mcommit 7dbf144ce0b64cedbc5e1b995162849eb609f743[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Nov 29 01:58:33 2016 +0800
+
+    fix bug per itron's report and RTL's update
+
+[33mcommit 1cd614cc6d03be2b4130ffeacf0e0437d32f8d77[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Nov 24 15:38:10 2016 +0800
+
+    fix usb CTRL+C issue
+
+[33mcommit 8b6f6a54edaa987f40b42f51acadcbd19c9b4161[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Nov 24 14:24:29 2016 +0800
+
+    fix dma display issue
+
+[33mcommit 2b2e19bd657c33c5792147c8d3200d9e51b9513d[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Nov 24 12:57:20 2016 +0800
+
+    add tamper driver support
+
+[33mcommit cdb321058499342bf87ae5a8d6885fa91c3503c9[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue Nov 22 20:44:42 2016 +0800
+
+    [rtc] fix rtc interrupt test case
+
+[33mcommit 5915449de7d4810b92f7c4929cfd8207f351d80a[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Mon Nov 21 22:42:14 2016 +0800
+
+      Release v2016.11.17b
+      change log:
+      1. fix rf sp_boot page error
+
+[33mcommit 8962ceff7c2ed2c435130f9e4c5c27b78f5cf26d[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Nov 21 16:07:14 2016 +0800
+
+    fix rf spboot wrong page number
+
+[33mcommit 0d3901b49f176f2f003c4f931e8c30f04a9a6062[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Nov 17 17:55:06 2016 +0800
+
+    Release v2016.11.17
+
+[33mcommit d2be287049037cf60f67b7c6c08d28c764012347[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Wed Nov 16 17:21:53 2016 +0800
+
+    fix dsp boot from arm special case bug
+
+[33mcommit 7ccb09474b4c13730413f9e1cece528e455d0eb5[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Nov 15 21:38:57 2016 +0800
+
+    fix plc/rf boot from arm special case
+
+[33mcommit 8d5e71be816600def87ae091f9d2f2e5f699431a[m
+Author: Edbert Hu <edbert.hu@britesemi.com>
+Date:   Tue Nov 15 17:37:35 2016 +0800
+
+    add plcrf_special boot case and dual-core boot case
+
+[33mcommit c74efcdc189d31313086259407f84da1407cd278[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Wed Nov 9 10:20:22 2016 +0800
+
+    epf: add more parameters in epf tests
+
+[33mcommit a6570cf2d146f7795227855fbc9e54ecf98136d7[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Nov 7 16:54:22 2016 +0800
+
+    read boot rom info from rom
+
+[33mcommit 599a1b6a31b1bed0824277bf6ea8e4ae8f158197[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Nov 4 12:08:34 2016 +0800
+
+    fix rom api test after kernel api implement
+
+[33mcommit bd709aebfffd76b8e43e3e0008849fabb6665212[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Nov 2 13:48:33 2016 +0800
+
+    add rng api, all api test passed
+
+[33mcommit a7f839ce11eda878e922001600c4eae97a3d5773[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Mon Oct 31 15:22:36 2016 +0800
+
+    [dma] add more detailed test description for dma interrupt test
+
+[33mcommit 25d18884626f3f0c0024d85dfbdd8a17b6e341f3[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Oct 27 10:32:25 2016 +0800
+
+    delete some debug info
+
+[33mcommit f2e665a53fb6965589414d4467ca4b2b949f6644[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Wed Oct 26 17:38:56 2016 +0800
+
+    add test apis, otp and aes test passed
+
+[33mcommit c44b7f67a1dd1139a7b22085034498cc38e03ca2[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue Oct 25 16:00:01 2016 +0800
+
+    Add more different trigger cases for RTC alarm for DSP side.
+
+[33mcommit 20e31cd141527a2a71b61e5374e6194d4222c189[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Oct 18 20:38:28 2016 +0800
+
+    crc: add dma support
+    
+    :100644 100644 e434c76... 065158c... M	cdl/include/cdl_crc.h
+    :100644 100644 d4188c7... 74b114d... M	cdl/src/cdl_crc.c
+    :100644 100644 e94d181... b19b2fe... M	test/cdl/src/test_crc.c
+
+[33mcommit fab8ec8b5840b39e4c95892c9358569bcb210699[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Oct 18 20:07:53 2016 +0800
+
+    print buffer for nand_read for OOB data
+    
+    :100644 100644 efd0152... 3910613... M	test/cdl/src/test_nand.c
+
+[33mcommit 7095fbc8860f7e9f1e4c7a021cc9bc11fdc724db[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Oct 18 19:42:49 2016 +0800
+
+    fix dma_cfg2 for share ram test
+    
+    :100644 100644 2374a72... e7e21c3... M	test/cdl/src/test_dma.c
+
+[33mcommit 6338e9e410510818bffb6c2f2eb8a3aff99dea18[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue Oct 18 17:49:19 2016 +0800
+
+    add OTP auto refresh function
+    
+    :100644 100644 80c41ac... 1bf5e16... M	cdl/include/cdl_otp.h
+    :100644 100644 d3947e1... 934bc87... M	cdl/src/cdl_otp.c
+
+[33mcommit 139e23a80efdba5dab07102e5a978238ef4770b4[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Mon Oct 17 14:07:37 2016 +0800
+
+    modify test case name for new-added nand_check_bb_all test.
+    
+    :100644 100644 509042f... efd0152... M	test/cdl/src/test_nand.c
+
+[33mcommit b8de1f52480cded22fc60eed4f1a7c5ffb550085[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Oct 14 17:55:08 2016 +0800
+
+    Modify some typos in DMA test case.
+    
+    :100644 100644 e91f6e8... 2374a72... M	test/cdl/src/test_dma.c
+
+[33mcommit 154d78b64c2706b8a0de7f9c2f73d7a80d36b96f[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Oct 13 13:33:15 2016 +0800
+
+    7. For nand tests, need to correct the parameter ‘cs’ and limit values to CS =0 OR 1. The test should not pass for CS =1. 8. For ‘nand_mark_bb’ & ‘nand_check_bb’, provide the valid input range for the block_num paramter. Should not pass for out of bound values for any parameter. 9. Please provide a test that checks for all the bad blocks in the device in a single test and displays the information on the console. 10. Please provide a seperate test for reading a block,page and OOB and displaying the data on the console.
+    
+    :100644 100644 5708774... 113088e... M	test/cdl/drivers/include/nandflash.h
+    :100644 100644 e42b582... 05e33f8... M	test/cdl/drivers/src/nandflash.c
+    :100644 100644 4cdad98... 509042f... M	test/cdl/src/test_nand.c
+
+[33mcommit caa8c6cdfce6f6e58530777bd8928c68dc1caee4[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Oct 13 12:31:15 2016 +0800
+
+    nand: limit cs to 0
+    
+    :100644 100644 1075346... 4cdad98... M	test/cdl/src/test_nand.c
+
+[33mcommit 89361ef1dafaf3039ab169b3cde1e85512773958[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Oct 13 12:26:52 2016 +0800
+
+    fix for dma test case: dma_int,dma_mc,cma_cfg,dma_m2m
+    
+    :100644 100644 76f9fd4... e91f6e8... M	test/cdl/src/test_dma.c
+
+[33mcommit 4dcf35dd998cf15c617ca0ea06a8cf27f9dba8b6[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Oct 11 13:43:23 2016 +0800
+
+    For dma_cfg’, add a feature to making source and destination memory contents be displayed via console to judge testing results.
+    
+    :100644 100644 dfd8701... 76f9fd4... M	test/cdl/src/test_dma.c
+
+[33mcommit 61733f097cc4ec275eb611d1379fc8297a844aa8[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Oct 11 13:38:39 2016 +0800
+
+    dma_m2m, add a feature to making source and destination memory contents be displayed via console to judge testing results.
+    
+    :100644 100644 914f6eb... dfd8701... M	test/cdl/src/test_dma.c
+
+[33mcommit 5d24d910e630c08de1c6e86c5a7cce852a2abc85[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Oct 12 13:10:47 2016 +0800
+
+    fix rf_boot_test
+    
+    :100644 100644 9ad436b... 6bc5548... M	test/cdl/src/test_ipc.c
+
+[33mcommit b9ea46eb2f82e92c66baecf70637746c14f912f4[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Tue Oct 11 17:34:20 2016 +0800
+
+    Modify crc codes to support both byte & word calculation based on latest CRC hardware design.
+    
+    :100644 100644 b1aba3a... e434c76... M	cdl/include/cdl_crc.h
+    :100644 100644 4fe16b8... d4188c7... M	cdl/src/cdl_crc.c
+    :100644 100644 9fd8cb0... e94d181... M	test/cdl/src/test_crc.c
+
+[33mcommit 1e86716f23439faf1cfc87816f2acf50b3c1ef13[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Sun Oct 9 18:17:56 2016 +0800
+
+    1. [Nand] Modify dma_mode parameter for nandflash test case. 2. [Nand] Modify rw_mode parameter for nand_write test. 3. [Nand] Modify ecc_bit parameter for nand_ecc test.
+    
+    :100644 100644 000d2b5... c6687ef... M	cdl/src/cdl_nfc.c
+    :100644 100644 544cda2... 1075346... M	test/cdl/src/test_nand.c
+
+[33mcommit bbe80beaeea8cda292223476ad8accc2b671e0e8[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Sep 29 15:28:53 2016 +0800
+
+    plc/rf boot from arm through ipc&share_ram test case
+
+[33mcommit 4610d0827133ba4c9ade0b46971476f27f401c2e[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 28 17:19:33 2016 +0800
+
+    epf test: move debug info to where we set house keeping done
+
+[33mcommit 90dbdb965ca7bd5aeaf876702cb7340718806ffb[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 28 14:51:26 2016 +0800
+
+    epf: add parameters to enable/disable set house keeping done
+
+[33mcommit c21915ed2b5644a4d445a8f66d369694e73ef833[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 28 14:45:54 2016 +0800
+
+    aes: ctr mode, remove unused ctr mode for hw enc/dec
+
+[33mcommit dcd0771a2533c76c958151340f37816294fd27a8[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 28 14:21:31 2016 +0800
+
+    fix cmac mode for multi-segment buffer support
+
+[33mcommit 30504084e6d9a5ff5fc27aaf6f68bd5ed5055eb9[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 28 13:47:19 2016 +0800
+
+    remove ccm check for maclen <4 for ccm star may have mac len 0
+
+[33mcommit cf647a8b2e1ade3a5eb38c1d6b5070fb01b23410[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 28 13:41:39 2016 +0800
+
+    aes test case: ccm/gcm, check function return value(error condition process)
+
+[33mcommit 80191e1f66d5306b2972a4d46a3b6a5528d36f71[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 28 12:58:58 2016 +0800
+
+    fix aes driver,ccm mode; test case add error condition process
+
+[33mcommit 20baa58fe864d598b0aa4699a9b0fdd4a512b3ce[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Sep 27 13:46:55 2016 +0800
+
+    aes: add mutiple input segments support
+
+[33mcommit 3c8a11bd4f37a62bfff5dc572053b78d68e89db4[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Sep 26 18:35:12 2016 +0800
+
+    aes: fix driver to support large aad/plain text length; also update test case to support large size test
+
+[33mcommit 6b133ce858559992880857057aca15d583a697e3[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Sep 26 11:23:45 2016 +0800
+
+    For NAND, need add more interrupt types(except current write interrupt) in NAND interrupt tests
+
+[33mcommit 016a23671d20131c145818ca4e75a9a405f55baf[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Fri Sep 23 15:24:38 2016 +0800
+
+    Add log to showing up test pattern.
+
+[33mcommit 8076e3726917c16296edb7bf926420ea36ebc3b0[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Sep 23 12:57:26 2016 +0800
+
+    nandflash nand_flash_detect_onfi support ok
+
+[33mcommit 9549162c7051d57ea6b5ffd07fcf5cd9cbbe6bff[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Sep 22 14:14:52 2016 +0800
+
+    add pattern for nand_write testcase
+
+[33mcommit 8da786fa31ca6effd77b159186523d2d2345105a[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Sep 22 14:12:49 2016 +0800
+
+    1. Add test pattern in ‘ipc_set_msgg' 2. add timestamp display when received IPC event
+
+[33mcommit ff10ed43ef23eb4ec739f8386eadc91c936e04f5[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Sep 22 14:11:46 2016 +0800
+
+    add dma mb interface for easy to use
+
+[33mcommit 04f2495bc9a234f4fd90a5b5c8523bbcec68d0ce[m
+Author: kevin.sun <kevin.sun@britesemi.com>
+Date:   Wed Sep 21 17:45:25 2016 +0800
+
+    Add configurable test loop parameter in uart_dma function.
+
+[33mcommit b450df12cb2207981cf358b41a35f4dfc379fd90[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Sun Sep 18 17:31:07 2016 +0800
+
+    aes: fix cmac mode for mac len:16
+
+[33mcommit 43e7c45c36f35f5dab4ab560b0a558512a68c136[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 14 18:41:15 2016 +0800
+
+    qspi: qspi_mode testcase, add parameters to specified data pattern to write
+
+[33mcommit 5c80113e422f9913d13f62f31fea7532133faa3e[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Sep 13 11:45:11 2016 +0800
+
+    cdl test: uart_echo, add packet/stream mode
+
+[33mcommit eb01a0820280bb533358800f05795f95534312f3[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Sep 13 11:21:14 2016 +0800
+
+    aes: fix ccm/ccm* when plain text have zero length; add ccm* test case
+
+[33mcommit 92d7d9f2daafe132728e35b09810bbe7d65b7cbd[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Sep 15 14:06:30 2016 +0800
+
+    Release v2016.09.07
+    
+    For details, refer to brite_itron/columbus/docs/Release_Notes_and_Test_Report/CDL/20160907/CDL(ARM)_Test_Report_20160907(HC).xlsx
+
+[33mcommit 85627375cf0d728eabfed1802994f1428f111a85[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Sep 12 20:49:47 2016 +0800
+
+    cdl test: add console switch feature; fix uart echo and line break test case
+
+[33mcommit 5d014a898283abb85f633aef0c71f446154fe00b[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Sep 12 15:27:00 2016 +0800
+
+    usb: add controller/phy reset for HC
+
+[33mcommit 21313d52d89fe3e3f3912a4355027c00e7464db0[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Sep 12 15:26:40 2016 +0800
+
+    spi: burst len as a global setting
+
+[33mcommit 917e13ad99c966946f9bcd5cf0cfdd09532715ee[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Sat Sep 10 16:27:32 2016 +0800
+
+    update argument obtain,support both 10/16 base input
+
+[33mcommit dc529e8217b3c69960cc96bf3658624695342827[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Sat Sep 10 15:44:11 2016 +0800
+
+    fix memory leak for uart test case using multi-block dma; add sw reset test case
+
+[33mcommit d1b1d6d1c43787e31bfad6995f8ad4139f9bd2fd[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Sep 9 21:26:45 2016 +0800
+
+    fix uart dma burst len and trigger level setting; fix test case according customer request; add multiblock dma + interrupt test case
+
+[33mcommit 47cc0f5bf8332f19c2e2068f8a112d90c43000f2[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Sep 9 21:20:19 2016 +0800
+
+    mmc: add some card capbility check(bus width/max speed); also fixed some test case according request
+
+[33mcommit d3daa0022c7a3b088c7a139515380cca06964f45[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Sep 8 16:53:28 2016 +0800
+
+    fix ipc free timer
+
+[33mcommit c91eb6418b71374d37c40614168d199196ac47e4[m
+Author: volans guo <volans.guo@britesemi.com>
+Date:   Wed Sep 7 21:31:21 2016 +0800
+
+    fix epf test case
+
+[33mcommit f28d5708515454f0b7a00c964355b16a218f5385[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 7 16:23:38 2016 +0800
+
+    spi, fix spi interrupt test, ip spec change
+
+[33mcommit e2837d3e02aa5dbddfcb9d3c44f2528bbb5339ae[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 7 15:55:18 2016 +0800
+
+    disalbe spi interrupt when using dma mode to remove the effect by previous spi_slave using fifo mode
+
+[33mcommit fd61d51d21d27d71d24318178b354c199afbd83a[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 7 15:02:29 2016 +0800
+
+    spi: fix slave fifo mode
+
+[33mcommit 4e1745ae0fc4b2218ef37e7a2ebc980afcf5ec5c[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Sep 7 13:59:42 2016 +0800
+
+    1. fix ipc: add free time testcase; 2. fix spi: enhance performance 3. fix mmc: add some code try to improve performance 4. fix uart: change some testcase
+
+[33mcommit a4818e1cf0ddf89a69536d1d983415dac81e8f3f[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Sep 6 15:41:06 2016 +0800
+
+    rtc: add 100th second in the displayed time; Support setting up an alarm which triggers an interrupt within x where x represents all the units (years, months, Weeks, days, hours, minutes, seconds).
+
+[33mcommit 0e8274bd4e1e0f66cd6417fdce252cae4a6d8d86[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Sep 6 14:52:00 2016 +0800
+
+    fix DEL char can't delete cmdline chars, fix len==0 issue in spi flash, tune timer code
+
+[33mcommit a5d0db31227fa52ba9885e462de47e2af286c817[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Sep 6 13:21:17 2016 +0800
+
+    1. ipc: fix bug 2. add epf test case 3. qspi: update test case for more info 4. gpio: update, add debouce test 5. update for style format, remove all trim space
+
+[33mcommit 34a594b1714f8196ae7db83262f37de91ebfaec0[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Sat Sep 3 18:49:43 2016 +0800
+
+    1. fix spi driver/test case: support test spi on same board support 4-32 bus width support dma mode fix register define for IP spec update 2. ipc: add interrupt support 3. dma: api change for init,so other module can use dma interrupt without extra work
+
+[33mcommit ccdefba3d1319f47e4acc948557c29edbacce94a[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Aug 30 21:18:03 2016 +0800
+
+    add volatile to soft_delay variable to prevent compiler optimize
+
+[33mcommit 32eeaf7a769150547094056afc882ec6cfc912f8[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Sep 2 10:48:09 2016 +0800
+
+    otp: fix bug for otp_prog_byte,read wrong value when do prog check
+
+[33mcommit a198c9ba77d78d6667d95d345ca841c84680f9ab[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Sep 2 10:46:55 2016 +0800
+
+    fix aes otp key mode: also need set one dummy key to register
+
+[33mcommit 52890a9753735a3f4f883b35b3a584ff6a2ed923[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Aug 31 20:41:37 2016 +0800
+
+    dma, m2m add more info about parameters, add robust test, include 'share ram' test
+
+[33mcommit ef28282f09c1ee6b2bfad881578ac76695c0001a[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Aug 31 20:10:41 2016 +0800
+
+    otp: spec update, hw key4 now can access by sw; also add hw key display for otp_secure_show command
+
+[33mcommit 594eff12253a66bfbe115e67b23196f47ace4690[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Aug 31 20:06:33 2016 +0800
+
+    ipc,remove some verbose debug info,move dev global var to cdl driver
+
+[33mcommit 18d1f808a360fd7c361dbfcd18e6535972292413[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Aug 31 20:03:24 2016 +0800
+
+    wdt, reset pulse length only have 16 bit, update default value and para check
+
+[33mcommit 17307dcd1cdd9a8c2b48a03aa4f0674d66b59f83[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Aug 31 14:08:17 2016 +0800
+
+    wdt testcase, fix name and some testcase procedure
+
+[33mcommit 7d00e156c023e168add6b3e5547fa39b1e89d3c0[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Aug 30 19:56:38 2016 +0800
+
+    fix otp driver/testcase: add byte access interface; add otp dump command
+
+[33mcommit bb23fe9e743febd279d5aaf0f26107e3d12d80b9[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Aug 30 15:55:17 2016 +0800
+
+    add test case for arm to generate irq for dsp
+
+[33mcommit e03da026325733f3301603cf96299ac763e6cf4f[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Aug 30 13:42:02 2016 +0800
+
+    1. fix crc driver/testcase for IP updated; support xmodem/ccitt mode 2. update timer testcase; driver add pwm_pol config; add sw reset 3. rtc: fix wrong RTC base address;fix 12/24 hour display
+
+[33mcommit 5a4c15a5dee230eff4d2549ce4762843a3e484d0[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Aug 29 13:32:38 2016 +0800
+
+    add software check of ecc pka result, fix pka compile warnings, fix build dependency include, use test name to select test
+
+[33mcommit e950248e3c76c6be97c90c0f0b8a86d44cb4d2bb[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Aug 26 19:46:35 2016 +0800
+
+    cdl v15: 1. aes driver/test case update; support all mode 2. add ipc driver/test case 3. nand: add onfi support 4. fix wrong base address define for com bus(rtc,etc) 5. add nand bad block check interface 6. add rtc 12/24 hour display
+
+[33mcommit 1f99eac17705eba1b38ac2ca761775ec0d7fd3b8[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Aug 25 13:03:53 2016 +0800
+
+    fix denpendency in makefile of test
+
+[33mcommit cfd8db85e9dd0bd99210b7d0f9cc3553a45272fb[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Aug 25 12:57:38 2016 +0800
+
+    fix paralle build, fix build with arm-none-eabi-gcc on cygwin
+
+[33mcommit c3afd96c0e4787549914c45e96260d08b6ef3667[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Aug 24 19:23:06 2016 +0800
+
+    cdl v14: 1. add HC platform support; it's default BOARD type; (mem map; interrupt,etc) 2. add rng driver/testcase 3. add aes driver/testcase 4. fix gpio driver/test case for high/low level interrupt trigger 5. fix sha driver: for HP platform result register offset change ;remove some debug code 6. change default console using hw uart0; for HC can't use the console inside board 7. lib tomcrypt: add some aes mode support code; so we can compare result when testing hw aes
+
+[33mcommit ab7ae7974a5c493284f81806c3944e2c05f61bd1[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Tue Aug 23 20:46:33 2016 +0800
+
+    add ecc test
+
+[33mcommit eb89de9d563b838ea6a68d17bf3cb22043c4bd51[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Aug 18 14:53:38 2016 +0800
+
+    cdl v13: 1. add sha driver/test case 2. nfc driver: fix read_word 3. otp: fix testcase; move disable key code from cdl to testcase 4. rtc: reformat using linux style; fix interrupt testcase 5. fix some compile and header files issues for add crypt lib 6. using own cb_rand(),cb_lldiv() for some mismatch with standard headers
+
+[33mcommit 0b8c75e061c275f7d38f03672745e47a5e442199[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Thu Aug 18 08:55:58 2016 +0800
+
+    fix tomcrypt compile with timesys toolchain
+
+[33mcommit 093ac9951b782ba4b72d2310b376e5abfb1162ac[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Aug 17 19:35:36 2016 +0800
+
+    change back to timesys toolchain which was changed by mistake
+
+[33mcommit 309d97e055810c62ffa8e79ce9762c7239d73696[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Aug 17 15:14:41 2016 +0800
+
+    add libtomcrypt lite edition for ecc/aes/sha test
+
+[33mcommit 08ab50509aa4b516863cd69294e84be602e91c79[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Aug 10 18:01:15 2016 +0800
+
+    add brite semiconductor copyright header
+
+[33mcommit b8ea05385bd0a01607aee6f1fc82eb978ea8ce20[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed Aug 10 17:10:51 2016 +0800
+
+        cdl v12:
+          1. fix dma interrupt testcase, ch7 issue
+          2. fix qspi legacy flash testcase
+          3. fix mmc driver: clock and bus width may not set according testcase
+
+[33mcommit a4698d9f0d9f9d5de69bac6fc8ea77168255d724[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Sat Aug 6 20:10:10 2016 +0800
+
+        fix otp test case
+    
+        cdl v11:
+         1. fix otp driver/test case
+         2. fix rtc leap year issue
+         3. fix qspi high data rate test fail: fix indirect fifo depth setting; fix dma mode unaligned buffer issue; fix fifo overflow for read
+    
+        fix host plug issue
+    
+        add new MX35LF1GE4AB spi nand chip support for legacy mode test
+    
+        1. change qspi/spi flash access interface to support line mode(single/dual/quad)
+        2. add support for spi nand chip:MX35LF1GE4AB
+        3. add reset interrupt handler to resolve usb dev enum issue
+        4. add usb interrupt testcase
+    
+        1. fix qspi driver and spi flash code to support MX spi nand chip
+        2. fix qspi test case for support MX spi nand chip
+        3. fix gpio test case for HP's interrupt connection change
+    
+        1. change default target to "HP" platform
+        2. fix rtc driver and test case
+        3. fix nand driver for HP
+        4. fix interrupt process for HP
+        5. spi,default using normal mode,not TI mode
+    
+        cdl v9: add crc; fix rtc driver; fix some testcase; add HP platform support
+    
+        delete ULPI operation on HP board
+    
+        add for zc706 board
+    
+        HP: fix usb device enumeration issue
+
+[33mcommit 53a26168b9141ad6f9ffabf75b1417c43b3dd0f9[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Fri Jul 22 21:36:34 2016 +0800
+
+    fix some bugs, add HP platform support
+
+[33mcommit 3385f67ebc4487db15873cf1b4348409e68a1be8[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Mon Jul 18 16:27:43 2016 +0800
+
+    update qspi, mmc, nand, usb
+
+[33mcommit f3929f66ac9281515e6dd47eb06c9532e46364e8[m
+Author: sunny.sun <sunny.sun@britesemi.com>
+Date:   Thu Jun 2 15:45:34 2016 +0800
+
+    1. Add some driver and test code; 2. Modify to linux kernel coding sytle
+
+[33mcommit adb6b78f53e6a8ebcb1809a4b099729be497c88c[m
+Author: Bob Zhao <bob.zhao@britesemi.com>
+Date:   Wed May 25 14:02:15 2016 +0800
+
+    cdl v1

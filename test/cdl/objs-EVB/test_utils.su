@@ -1,0 +1,5 @@
+test_utils.c:13:6:print_hex_dump	32	static
+test_utils.c:50:6:dump_memory32	16	static
+test_utils.c:76:24:cache_test_mul2	0	static
+test_utils.c:113:24:cache_test_fill	0	static
+test_utils.c:149:24:test_icache_perf	24	static

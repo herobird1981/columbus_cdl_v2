@@ -1,0 +1,2 @@
+multi.c:16:5:ltc_init_multi	32	static
+multi.c:45:6:ltc_deinit_multi	24	static

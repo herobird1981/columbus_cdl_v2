@@ -1,0 +1,9 @@
+pka_basic_math.c:9:5:pka_montg_calc_r_inv	24	static
+pka_basic_math.c:23:5:pka_montg_calc_mp	24	static
+pka_basic_math.c:37:5:pka_montg_r_sqr	24	static
+pka_basic_math.c:51:5:pka_modmult	24	static
+pka_basic_math.c:70:5:pka_modadd	24	static
+pka_basic_math.c:86:5:pka_modsub	24	static
+pka_basic_math.c:101:5:pka_reduce	24	static
+pka_basic_math.c:115:5:pka_moddiv	24	static
+pka_basic_math.c:130:5:pka_modinv	24	static

@@ -1,0 +1,4 @@
+eabi_compat.c:10:6:hang	8	static
+eabi_compat.c:17:5:raise	0	static
+eabi_compat.c:22:6:__div0	0	static
+eabi_compat.c:25:6:abort	0	static

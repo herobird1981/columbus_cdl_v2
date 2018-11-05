@@ -1,0 +1,9 @@
+test_dwc_trng.c:273:12:trng_int	32	static
+test_dwc_trng.c:130:12:trng_manual_more	32	static
+test_dwc_trng.c:92:13:trng_manual	16	static
+test_dwc_trng.c:43:12:cmd_help	0	static
+test_dwc_trng.c:235:6:dwc_trng_int_test_ISR	16	static
+test_dwc_trng.c:373:5:trng_kat_test	40	static
+test_dwc_trng.c:177:12:trng_quality	48	static
+test_dwc_trng.c:424:6:dwc_trng_reset_test	16	static
+test_dwc_trng.c:457:6:dwc_trng_cg_test	16	static

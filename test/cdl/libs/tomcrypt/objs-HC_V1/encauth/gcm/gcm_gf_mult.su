@@ -1,0 +1,2 @@
+gcm_gf_mult.c:63:13:gcm_rightshift	24	static
+gcm_gf_mult.c:83:6:gcm_gf_mult	64	static

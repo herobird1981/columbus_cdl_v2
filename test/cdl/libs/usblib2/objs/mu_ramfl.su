@@ -1,0 +1,5 @@
+mu_ramfl.c:27:13:MGC_RamFileCheck	8	static
+mu_ramfl.c:39:19:MUSB_RamFileCreate	32	static
+mu_ramfl.c:72:9:MUSB_RamFileDelete	32	static
+mu_ramfl.c:99:10:MUSB_RamFileCount	8	static
+mu_ramfl.c:108:25:MUSB_RamFileGetInfo	16	static

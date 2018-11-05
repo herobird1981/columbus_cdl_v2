@@ -1,0 +1,6 @@
+mu_mdr.c:39:9:MGC_MhdrcInit	40	static
+mu_mdr.c:74:23:MGC_MhdrcBindEndpoint	48	static
+mu_mdr.c:307:10:MGC_MhdrcStartRx	64	static
+mu_mdr.c:623:10:MGC_MhdrcStartTx	48	static
+mu_mdr.c:843:5:MGC_MhdrcDumpState	0	static
+mu_mdr.c:852:5:MGC_MhdrcDumpEndpoint	0	static

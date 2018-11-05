@@ -1,0 +1,13 @@
+tst_msd.c:159:13:MGC_MsdNewOtgState	0	static
+tst_msd.c:188:13:MGC_MsdOtgError	0	static
+tst_msd.c:851:13:MGC_TestMsdCheckTest	128	static
+tst_msd.c:219:13:MGC_TestMsdNewBlockSet	32	static
+tst_msd.c:545:13:MGC_TestMsdMediumCheckComplete	0	static
+tst_msd.c:551:13:MGC_TestMsdStart	56	static
+tst_msd.c:445:13:MGC_TestMsdMountComplete	0	static
+tst_msd.c:461:13:MGC_TestMsdTransferComplete	184	static
+tst_msd.c:1010:1:MUSB_HfiAddDevice	24	static
+tst_msd.c:1035:1:MUSB_HfiMediumInserted	8	static
+tst_msd.c:1048:6:MUSB_HfiMediumRemoved	0	static
+tst_msd.c:1056:6:MUSB_HfiDeviceRemoved	0	static
+tst_msd.c:1067:5:msd_main	40	static

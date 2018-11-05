@@ -1,0 +1,12 @@
+mu_list.c:22:13:MUSB_ArrayInit	32	static
+mu_list.c:51:15:MUSB_ArrayLength	0	static
+mu_list.c:62:7:MUSB_ArrayFetch	0	static
+mu_list.c:82:9:MUSB_ArrayAppend	24	static
+mu_list.c:134:6:MUSB_ArrayClear	16	static
+mu_list.c:149:6:MUSB_ListInit	0	static
+mu_list.c:160:15:MUSB_ListLength	0	static
+mu_list.c:179:7:MUSB_ListFindItem	0	static
+mu_list.c:192:18:MUSB_ListFindRecord	0	static
+mu_list.c:227:9:MUSB_ListAppendItem	16	static
+mu_list.c:260:9:MUSB_ListInsertItem	16	static
+mu_list.c:301:6:MUSB_ListRemoveItem	16	static

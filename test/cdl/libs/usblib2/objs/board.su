@@ -1,0 +1,17 @@
+board.c:197:6:MUSB_ReadConsole	16	static
+board.c:218:6:MUSB_WriteConsole	16	static
+board.c:228:7:MGC_AfsMemRealloc	24	static
+board.c:240:9:MUSB_BoardMessageString	32	static
+board.c:250:9:MUSB_BoardMessageNumber	88	static
+board.c:288:10:MUSB_BoardGetTime	4	static
+board.c:333:13:MGC_AfsUdsIsr	24	static
+board.c:359:13:MGC_BoardInit	8	static
+board.c:389:7:MUSB_BoardInitController	32	static
+board.c:428:9:MUSB_BoardInitTimers	48	static
+board.c:493:6:MUSB_BoardDestroyController	24	static
+board.c:505:6:MUSB_BoardRunBackground	16	static
+board.c:510:13:MGC_AfsTimerExpired	32	static
+board.c:559:9:MUSB_BoardArmTimer	40	static
+board.c:598:9:MUSB_BoardCancelTimer	32	static
+board.c:613:9:MUSB_BoardPrintDiag	16	static
+board.c:622:7:MUSB_BoardSystemToBusAddress	24	static

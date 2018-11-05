@@ -1,0 +1,15 @@
+musb_gadget_ep0.c:40:14:decode_ep0stage	16	static
+musb_gadget_ep0.c:57:12:service_tx_status_request	88	static
+musb_gadget_ep0.c:154:1:service_in_request	24	static
+musb_gadget_ep0.c:178:13:musb_g_ep0_giveback	16	static
+musb_gadget_ep0.c:207:1:service_zero_data_request	256	static
+musb_gadget_ep0.c:467:13:ep0_rxstate	96	static
+musb_gadget_ep0.c:522:13:ep0_txstate	96	static
+musb_gadget_ep0.c:580:1:musb_read_setup	64	static
+musb_gadget_ep0.c:628:1:forward_to_driver	24	static
+musb_gadget_ep0.c:646:13:musb_g_ep0_irq	216	static
+musb_gadget_ep0.c:897:1:musb_g_ep0_enable	16	static
+musb_gadget_ep0.c:903:12:musb_g_ep0_disable	16	static
+musb_gadget_ep0.c:910:1:musb_g_ep0_queue	128	static
+musb_gadget_ep0.c:991:12:musb_g_ep0_dequeue	16	static
+musb_gadget_ep0.c:997:12:musb_g_ep0_halt	88	static

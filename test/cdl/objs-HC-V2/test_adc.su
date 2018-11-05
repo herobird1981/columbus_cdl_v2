@@ -1,0 +1,2 @@
+test_adc.c:350:6:adc_reset_test	0	static
+test_adc.c:355:6:adc_cg_test	0	static

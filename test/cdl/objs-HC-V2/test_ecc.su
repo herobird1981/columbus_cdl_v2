@@ -1,0 +1,10 @@
+test_ecc.c:12:12:cmd_help	0	static
+test_ecc.c:54:6:run_cmd	40	static
+test_ecc.c:199:6:reg_algs	16	static
+test_ecc.c:350:6:libtomcrypt_init	8	static
+test_ecc.c:638:12:ecc_test_shamir	352	static
+test_ecc.c:463:12:ecc_test_sign_verify	240	static
+test_ecc.c:380:5:ecc_test_basic_ex	56	static
+test_ecc.c:444:12:ecc_test_basic	16	static
+test_ecc.c:744:6:ecc_reset_test	16	static
+test_ecc.c:775:6:ecc_cg_test	16	static

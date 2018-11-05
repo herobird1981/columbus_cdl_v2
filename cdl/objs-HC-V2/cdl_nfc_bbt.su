@@ -1,0 +1,9 @@
+cdl_nfc_bbt.c:49:6:nfc_bbt_va_to_pa	28	static
+cdl_nfc_bbt.c:103:6:nfc_bbt_pa_to_va	24	static
+cdl_nfc_bbt.c:162:9:nfc_bbt_blk_chk	40	static
+cdl_nfc_bbt.c:217:9:nfc_bbt_scan	32	static
+cdl_nfc_bbt.c:277:9:nfc_bbt_write	40	static
+cdl_nfc_bbt.c:375:9:nfc_bbt_read	16	static
+cdl_nfc_bbt.c:424:6:nfc_bbt_blk_marked	4	static
+cdl_nfc_bbt.c:457:12:nfc_bbt_blk_verify	0	static
+cdl_nfc_bbt.c:472:9:nfc_bbt_test	0	static

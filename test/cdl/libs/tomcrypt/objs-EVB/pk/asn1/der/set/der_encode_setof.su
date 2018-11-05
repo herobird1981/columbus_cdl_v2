@@ -1,0 +1,2 @@
+der_encode_setof.c:25:12:qsort_helper	24	static
+der_encode_setof.c:61:5:der_encode_setof	56	static

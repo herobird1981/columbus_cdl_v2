@@ -1,0 +1,16 @@
+mmc.c:34:12:wrapper_send_cmd	0	static
+mmc.c:42:13:wrapper_set_ios	4	static
+mmc.c:53:12:wrapper_init_hw	0	static
+mmc.c:61:12:wrapper_getcd	0	static
+mmc.c:69:12:wrapper_getwp	0	static
+mmc.c:262:12:mmc_send_op_cond_iter	40	static
+mmc.c:218:12:mmc_go_idle	40	static
+mmc.c:693:12:mmc_set_blocklen.part.0	48	static
+mmc.c:170:12:mmc_send_status.constprop	48	static
+mmc.c:369:12:mmc_switch.isra.1	48	static
+mmc.c:927:12:mmc_startup	1224	static
+mmc.c:751:15:mmc_bread	104	static
+mmc.c:855:15:mmc_bwrite	104	static
+mmc.c:907:6:mmc_set_clock	4	static
+mmc.c:1423:13:mmc_create	24	static
+mmc.c:1526:5:mmc_init_card	80	static

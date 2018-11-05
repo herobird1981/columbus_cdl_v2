@@ -1,0 +1,5 @@
+compile: (load addr: 0x0)
+make clean
+make BOARD_TYPE=HC
+
+

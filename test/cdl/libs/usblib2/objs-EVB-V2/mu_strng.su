@@ -1,0 +1,6 @@
+mu_strng.c:44:8:MUSB_StringCompare	16	static
+mu_strng.c:85:9:MUSB_StringConcat	4	static
+mu_strng.c:126:13:MUSB_StringFind	56	static
+mu_strng.c:171:9:MUSB_Stringize	16	static
+mu_strng.c:260:10:MUSB_StringLength	0	static
+mu_strng.c:309:9:MUSB_StringParse	16	static

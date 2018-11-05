@@ -1,0 +1,15 @@
+cdl_ddr.c:1340:13:lpddr2_ctrl_200mhz_cl3_bl8_config	32	static
+cdl_ddr.c:1500:13:lpddr2_ctrl_400mhz_cl6_bl4_config	36	static
+cdl_ddr.c:1660:13:lpddr2_ctrl_400mhz_cl6_bl8_config	36	static
+cdl_ddr.c:1820:13:lpddr2_ctrl_533mhz_cl8_bl4_config	32	static
+cdl_ddr.c:1980:13:lpddr2_ctrl_533mhz_cl8_bl8_config	32	static
+cdl_ddr.c:2371:13:lpddr_phy_133mhz_cl3_bl8_config	24	static
+cdl_ddr.c:2735:13:lpddr2_phy_133mhz_cl3_bl8_config	20	static
+cdl_ddr.c:31:6:ddr_var_init	16	static
+cdl_ddr.c:2140:6:ddr_ctrl_config	48	static
+cdl_ddr.c:3373:6:ddr_phy_config	24	static
+cdl_ddr.c:3423:6:ddr_extra_config	8	static
+cdl_ddr.c:3487:6:ddr_set_clk	8	static
+cdl_ddr.c:3558:6:ddr_scram_ctrl	0	static
+cdl_ddr.c:3568:6:ddr_rng_loadl	0	static
+cdl_ddr.c:3573:6:ddr_ctrl_start	8	static

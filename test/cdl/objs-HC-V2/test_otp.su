@@ -1,0 +1,16 @@
+test_otp.c:19:13:otp_test_init	8	static
+test_otp.c:667:12:otp_int	16	static
+test_otp.c:504:12:otp_key_dis_chk	544	static
+test_otp.c:638:12:otp_key_disable	8	static
+test_otp.c:407:12:otp_test	680	static
+test_otp.c:366:12:otp_get_onebyte	24	static
+test_otp.c:265:12:otp_set_onebyte	32	static
+test_otp.c:222:12:otp_get_onebit	32	static
+test_otp.c:157:12:otp_set_onebit	32	static
+test_otp.c:852:12:otp_secure_show	104	static
+test_otp.c:15:12:cmd_help	0	static
+test_otp.c:654:6:otp_int_handler	16	static
+test_otp.c:906:12:otp_config_show	32	static
+test_otp.c:868:12:otp_non_secure_show	96	static
+test_otp.c:991:6:otp_reset_test	8	static
+test_otp.c:997:6:otp_cg_test	16	static

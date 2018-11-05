@@ -1,0 +1,11 @@
+cdl_tamp.c:154:6:brite_tamp_enable	0	static
+cdl_tamp.c:164:6:brite_tamp_set_config	4	static
+cdl_tamp.c:173:4:brite_tamp_get_event_count	0	static
+cdl_tamp.c:178:6:brite_tamp_clear_event_count	0	static
+cdl_tamp.c:183:6:brite_tamp_enable_irq	0	static
+cdl_tamp.c:192:6:brite_tamp_disable_irq	0	static
+cdl_tamp.c:201:4:brite_tamp_get_irq_status	0	static
+cdl_tamp.c:206:6:brite_tamp_clear_irq	0	static
+cdl_tamp.c:211:6:brite_tamp_init	16	static
+cdl_tamp.c:232:4:brite_tamp_get_hour	0	static
+cdl_tamp.c:254:6:brite_tamp_gettime	24	static

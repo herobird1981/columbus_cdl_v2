@@ -1,0 +1,16 @@
+qspi.c:52:6:qspi_set_drir	0	static
+qspi.c:81:6:qspi_set_dwir	0	static
+qspi.c:106:6:qspi_set_ddr	0	static
+qspi.c:138:6:qspi_set_dsr	0	static
+qspi.c:164:6:qspi_set_cfgr	0	static
+qspi.c:191:9:qspi_indirect_wr_chk_st	16	static
+qspi.c:239:9:qspi_indirect_rd_chk_st	16	static
+qspi.c:285:6:qspi_indirect_wr_setup	4	static
+qspi.c:317:6:qspi_indirect_rd_setup	4	static
+qspi.c:334:6:qspi_indirect_rd_setup_1	4	static
+qspi.c:363:9:qspi_cmd_chk_st	16	static
+qspi.c:401:10:qspi_read_int_st	0	static
+qspi.c:406:6:qspi_clr_int_st	0	static
+qspi.c:413:6:qspi_set_int_mask	0	static
+qspi.c:422:6:qspi_set_clk_mode	0	static
+qspi.c:432:6:qspi_set_access_mode	4	static

@@ -1,0 +1,15 @@
+test_rtc.c:841:12:rtc_set_trim	72	static
+test_rtc.c:832:12:rtc_calibration_para_show	16	static
+test_rtc.c:726:12:rtc_calibrate	72	static
+test_rtc.c:72:12:cmd_help	0	static
+test_rtc.c:33:13:display_rtc_time.constprop	40	static
+test_rtc.c:451:6:rtc_int_handler	8	static
+test_rtc.c:77:5:rtc_get_mode_hour	32	static
+test_rtc.c:228:12:rtc_get_time_robust	32	static
+test_rtc.c:198:12:rtc_get_time	24	static
+test_rtc.c:117:12:rtc_set_time	56	static
+test_rtc.c:274:5:rtc_get_trigger_mode	48	static
+test_rtc.c:610:12:rtc_int_for_dsp	72	static
+test_rtc.c:467:12:rtc_int	72	static
+test_rtc.c:322:12:rtc_alarm	72	static
+test_rtc.c:933:5:rtc_test_prepare	8	static

@@ -1,0 +1,2 @@
+ecc_sign_hash.c:46:5:ecc_sign_hash_raw	80	static
+ecc_sign_hash.c:141:5:ecc_sign_hash	72	static

@@ -1,0 +1,5 @@
+test_epf.c:202:12:epf_test_ISR_no_hs	16	static
+test_epf.c:185:6:epf_int_handler_noks	8	static
+test_epf.c:32:12:cmd_help	0	static
+test_epf.c:78:12:epf_test	24	static
+test_epf.c:37:6:epf_int_handler	8	static

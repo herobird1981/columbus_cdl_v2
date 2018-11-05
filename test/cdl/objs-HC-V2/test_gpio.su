@@ -1,0 +1,13 @@
+test_gpio.c:166:17:gpio_vec	8	static
+test_gpio.c:33:12:cmd_help	0	static
+test_gpio.c:190:6:gpio_int_handler	24	static
+test_gpio.c:219:6:gpio_int_handler_1	16	static
+test_gpio.c:38:13:gpio_get_port	8	static
+test_gpio.c:578:12:gpio_input_pu	48	static
+test_gpio.c:524:12:gpio_output_pu	48	static
+test_gpio.c:386:12:gpio_debounce	56	static
+test_gpio.c:236:12:gpio_int_type	48	static
+test_gpio.c:114:12:gpio_input	32	static
+test_gpio.c:72:12:gpio_output	32	static
+test_gpio.c:660:6:gpio_reset_test	24	static
+test_gpio.c:699:6:gpio_cg_test	24	static

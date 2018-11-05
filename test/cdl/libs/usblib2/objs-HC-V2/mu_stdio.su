@@ -1,0 +1,3 @@
+mu_stdio.c:24:10:MUSB_GetLine	24	static
+mu_stdio.c:65:9:MUSB_PrintString	24	static
+mu_stdio.c:79:9:MUSB_PrintLine	16	static

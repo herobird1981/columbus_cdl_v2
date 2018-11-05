@@ -1,0 +1,8 @@
+yarrow.c:38:5:yarrow_start	24	static
+yarrow.c:135:5:yarrow_add_entropy	240	static
+yarrow.c:184:5:yarrow_ready	40	static
+yarrow.c:228:15:yarrow_read	24	static
+yarrow.c:252:5:yarrow_done	24	static
+yarrow.c:275:5:yarrow_export	24	static
+yarrow.c:306:5:yarrow_import	32	static
+yarrow.c:333:5:yarrow_test	912	static

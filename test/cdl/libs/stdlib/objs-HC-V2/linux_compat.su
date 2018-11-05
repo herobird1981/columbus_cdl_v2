@@ -1,0 +1,4 @@
+linux_compat.c:17:15:copy_from_user	24	static
+linux_compat.c:24:7:kmalloc	24	static
+linux_compat.c:35:20:get_mem	24	static
+linux_compat.c:45:7:kmem_cache_alloc	16	static

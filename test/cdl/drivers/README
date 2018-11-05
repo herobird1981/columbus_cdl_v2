@@ -1,0 +1,13 @@
+high level drivers
+---------------------------------
+inc: internal header files
+src: driver code
+include: export apis
+objs: temporal dir for compile
+---------------------------------
+support drivers:
+console  :   only for debug purpose
+timer		 :   timer function
+interrupt:   generic interrupt handle
+
+

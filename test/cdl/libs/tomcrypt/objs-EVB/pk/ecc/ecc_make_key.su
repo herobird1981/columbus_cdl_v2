@@ -1,0 +1,2 @@
+ecc_make_key.c:50:5:ecc_make_key_ex	72	static
+ecc_make_key.c:34:5:ecc_make_key	24	static

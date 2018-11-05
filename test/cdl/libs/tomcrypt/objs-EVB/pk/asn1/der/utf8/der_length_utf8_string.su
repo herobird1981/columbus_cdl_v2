@@ -1,0 +1,2 @@
+der_length_utf8_string.c:24:15:der_utf8_charsize	0	static
+der_length_utf8_string.c:44:5:der_length_utf8_string	8	static

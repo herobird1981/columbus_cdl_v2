@@ -1,0 +1,5 @@
+usb_port.c:24:5:ctrlc	8	static
+usb_port.c:42:12:musb_init	16	static
+usb_port.c:49:12:musb_exit	16	static
+usb_port.c:79:5:musb_ulpi_init	32	static
+usb_port.c:104:5:musb_board_init	56	static

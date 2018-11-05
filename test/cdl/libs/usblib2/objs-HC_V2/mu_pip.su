@@ -1,0 +1,11 @@
+mu_pip.c:23:16:MGC_FindDescriptor	24	static
+mu_pip.c:66:9:MGC_PipePacketReceived	64	static
+mu_pip.c:161:9:MGC_PipeTransmitReady	56	static
+mu_pip.c:250:9:MGC_CompleteIrp	40	static
+mu_pip.c:416:9:MGC_StartNextIrp	72	static
+mu_pip.c:522:9:MUSB_GetPipeHalt	24	static
+mu_pip.c:533:10:MUSB_SetPipeHalt	40	static
+mu_pip.c:549:10:MUSB_FlushPipe	40	static
+mu_pip.c:564:10:MUSB_StartTransfer	64	static
+mu_pip.c:661:10:MUSB_InterruptReady	48	static
+mu_pip.c:675:10:MUSB_CancelTransfer	56	static

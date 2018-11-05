@@ -1,0 +1,8 @@
+test_crc.c:14:12:cmd_help	0	static
+test_crc.c:19:12:crc_init.part.0	16	static
+test_crc.c:266:12:crc_robust	32	static
+test_crc.c:203:12:crc_ccitt	24	static
+test_crc.c:115:12:crc_multiple	32	static
+test_crc.c:40:12:crc_xmodem	24	static
+test_crc.c:359:6:crc_reset_test	8	static
+test_crc.c:382:6:crc_cg_test	16	static

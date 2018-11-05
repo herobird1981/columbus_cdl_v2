@@ -1,0 +1,2 @@
+ltc_ecc_points.c:30:12:ltc_ecc_new_point	24	static
+ltc_ecc_points.c:47:6:ltc_ecc_del_point	8	static

@@ -1,0 +1,9 @@
+usb_dev_mass.c:23:5:usb_dev_init	0	static
+usb_dev_mass.c:29:6:usb_dev_exit	0	static
+usb_dev_mass.c:34:12:dev_mass_read_sector	0	static
+usb_dev_mass.c:51:12:ums_read_sector	0	static
+usb_dev_mass.c:39:12:dev_mass_write_sector	0	static
+usb_dev_mass.c:59:12:ums_write_sector	0	static
+usb_dev_mass.c:43:12:dev_mass_init	0	static
+usb_dev_mass.c:47:22:dev_mass_get_lba	0	static
+usb_dev_mass.c:100:5:usb_dev_mass_storage	48	static

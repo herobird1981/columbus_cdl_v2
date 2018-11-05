@@ -1,0 +1,14 @@
+memleak.c:150:21:add	16	static
+memleak.c:385:6:dbg_history_dump.part.3	56	static
+memleak.c:209:7:dbg_malloc	16	static
+memleak.c:225:7:dbg_memalign	16	static
+memleak.c:241:7:dbg_calloc	16	static
+memleak.c:339:5:dbg_check_addr	40	static
+memleak.c:296:6:dbg_free	24	static
+memleak.c:312:7:dbg_realloc	16	static
+memleak.c:361:6:dbg_mem_stat	40	static
+memleak.c:368:6:dbg_heap_dump	32	static
+memleak.c:385:6:dbg_history_dump	0	static
+memleak.c:416:6:dbg_abort	8	static
+memleak.c:426:6:dbg_zero_stat	8	static
+memleak.c:447:6:dbg_init	8	static

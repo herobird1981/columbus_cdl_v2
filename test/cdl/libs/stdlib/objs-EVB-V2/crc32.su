@@ -1,0 +1,4 @@
+crc32.c:16:6:make_table	4	static
+crc32.c:31:15:crc32	16	static
+crc32.c:82:16:crc16	0	static
+crc32.c:152:16:crc16_kermit	28	static

@@ -1,0 +1,2 @@
+div64.c:23:18:__div64_32	32	static
+div64.c:61:43:cb_lldiv	48	static

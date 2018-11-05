@@ -1,0 +1,8 @@
+cdl_sha.c:104:12:sha_exec	88	static
+cdl_sha.c:38:6:sha_init	16	static
+cdl_sha.c:50:6:sha_enable_irq	0	static
+cdl_sha.c:55:6:sha_disable_irq	0	static
+cdl_sha.c:59:6:sha_clear_irq	0	static
+cdl_sha.c:63:5:sha_get_int_status	0	static
+cdl_sha.c:169:5:sha256	0	static
+cdl_sha.c:173:5:sha384	0	static

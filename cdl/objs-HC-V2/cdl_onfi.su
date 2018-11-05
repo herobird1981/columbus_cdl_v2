@@ -1,0 +1,2 @@
+cdl_onfi.c:41:10:onfi_crc16_cpu_calc	8	static
+cdl_onfi.c:73:6:onfi_para_page_print	8	static

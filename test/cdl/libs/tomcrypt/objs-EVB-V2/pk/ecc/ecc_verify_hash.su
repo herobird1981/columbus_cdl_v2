@@ -1,0 +1,2 @@
+ecc_verify_hash.c:46:5:ecc_verify_hash_raw	96	static
+ecc_verify_hash.c:165:5:ecc_verify_hash	72	static

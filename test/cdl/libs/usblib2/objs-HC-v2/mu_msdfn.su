@@ -1,0 +1,9 @@
+mu_msdfn.c:627:13:MGC_MsdNewUsbState	24	static
+mu_msdfn.c:635:16:MGC_MsdDeviceRequest	48	static
+mu_msdfn.c:685:16:MGC_MsdDeviceConfigSelected	32	static
+mu_msdfn.c:711:13:MGC_MsdInquiry	32	static
+mu_msdfn.c:791:13:MGC_MsdCommand	72	static
+mu_msdfn.c:1088:13:MGC_MsdRxCbwComplete	24	static
+mu_msdfn.c:1136:13:MGC_MsdRxDataComplete	16	static
+mu_msdfn.c:1150:13:MGC_MsdTxDataComplete	16	static
+mu_msdfn.c:1162:13:MGC_MsdTxCswComplete	16	static

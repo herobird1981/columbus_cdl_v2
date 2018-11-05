@@ -1,0 +1,7 @@
+cdl_qspi_nand_bbt.c:64:6:qspi_bbt_va_to_pa	28	static
+cdl_qspi_nand_bbt.c:118:6:qspi_bbt_pa_to_va	24	static
+cdl_qspi_nand_bbt.c:230:9:qspi_bbt_scan	56	static
+cdl_qspi_nand_bbt.c:290:9:qspi_bbt_write	40	static
+cdl_qspi_nand_bbt.c:388:9:qspi_bbt_read	16	static
+cdl_qspi_nand_bbt.c:437:6:qspi_bbt_blk_marked	4	static
+cdl_qspi_nand_bbt.c:470:12:qspi_bbt_blk_verify	0	static

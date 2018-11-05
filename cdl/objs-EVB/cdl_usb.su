@@ -1,0 +1,4 @@
+cdl_usb.c:11:6:usb_enable_int	0	static
+cdl_usb.c:15:6:usb_enable_tx_ep_int	0	static
+cdl_usb.c:19:6:usb_enable_rx_ep_int	0	static
+cdl_usb.c:23:15:usb_get_int_status	0	static

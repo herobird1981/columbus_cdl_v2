@@ -1,0 +1,5 @@
+sha256.c:71:13:sha256_compress	336	static
+sha256.c:238:5:sha256_done	24	static
+sha256.c:206:5:sha256_init	16	static
+sha256.c:230:1:sha256_process	32	static
+sha256.c:291:6:sha256_test	280	static

@@ -1,0 +1,3 @@
+sha224.c:44:5:sha224_init	16	static
+sha224.c:67:5:sha224_done	56	static
+sha224.c:87:6:sha224_test	256	static

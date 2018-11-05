@@ -1,0 +1,4 @@
+tomcrypt_dump.c:6:6:dump_mpz	16	static
+tomcrypt_dump.c:65:6:dump_ecc_point	16	static
+tomcrypt_dump.c:71:6:dump_ltc_ecc_type	48	static
+tomcrypt_dump.c:81:6:dump_ecc_key	24	static

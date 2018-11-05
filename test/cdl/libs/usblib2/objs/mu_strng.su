@@ -1,0 +1,8 @@
+mu_strng.c:22:15:MGC_CharCompare	24	static
+mu_strng.c:44:8:MUSB_StringCompare	40	static
+mu_strng.c:85:9:MUSB_StringConcat	32	static
+mu_strng.c:126:13:MUSB_StringFind	48	static
+mu_strng.c:171:9:MUSB_Stringize	40	static
+mu_strng.c:260:10:MUSB_StringLength	24	static
+mu_strng.c:276:16:MGC_GetDigitValue	24	static
+mu_strng.c:309:9:MUSB_StringParse	48	static

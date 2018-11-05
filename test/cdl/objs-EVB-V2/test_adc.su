@@ -1,0 +1,8 @@
+test_adc.c:22:17:FindOneInNumber	4	static
+test_adc.c:196:12:adc_int	40	static
+test_adc.c:49:12:adc_single_mode_test	56	static
+test_adc.c:17:12:cmd_help	0	static
+test_adc.c:182:6:adc_int_handler	8	static
+test_adc.c:119:12:adc_continue_mode_test	40	static
+test_adc.c:276:6:adc_reset_test	32	static
+test_adc.c:310:6:adc_cg_test	32	static

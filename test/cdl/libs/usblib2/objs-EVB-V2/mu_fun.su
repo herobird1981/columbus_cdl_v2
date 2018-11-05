@@ -1,0 +1,11 @@
+mu_fun.c:140:17:MGC_FunctionBindConfig	136	static
+mu_fun.c:296:17:MGC_FunctionVerifyResources	32	static
+mu_fun.c:1029:6:MGC_FunctionChangeState.part.0	32	static
+mu_fun.c:28:6:MGC_FunctionPreparePipe	4	static
+mu_fun.c:339:10:MGC_FunctionRegisterClient	56	static
+mu_fun.c:417:10:MGC_FunctionDestroy	24	static
+mu_fun.c:487:6:MGC_FunctionSpeedSet	16	static
+mu_fun.c:518:9:MGC_FunctionParseSetup	96	static
+mu_fun.c:1029:6:MGC_FunctionChangeState	0	static
+mu_fun.c:1047:10:MUSB_DeviceResponse	48	static
+mu_fun.c:1068:6:MUSB_SetFunctionParse	0	static

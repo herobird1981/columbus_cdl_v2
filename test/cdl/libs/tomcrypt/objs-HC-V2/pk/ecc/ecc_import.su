@@ -1,0 +1,3 @@
+ecc_import.c:26:12:is_point	56	static
+ecc_import.c:81:5:ecc_import	24	static
+ecc_import.c:94:5:ecc_import_ex	104	static

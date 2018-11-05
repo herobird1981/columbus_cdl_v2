@@ -1,0 +1,17 @@
+test_ipc.c:678:12:rf_boot_test	32	static
+test_ipc.c:473:12:plc_boot_test	32	static
+test_ipc.c:371:12:ipc_free_time	56	static
+test_ipc.c:311:12:ipc_int	24	static
+test_ipc.c:168:12:ipc_get_msg	40	static
+test_ipc.c:41:12:ipc_set_msg	64	static
+test_ipc.c:14:12:cmd_help	0	static
+test_ipc.c:266:6:a7_ipc_int_rf	24	static
+test_ipc.c:285:6:a7_ipc_int_plc	24	static
+test_ipc.c:1038:12:plcrf_spboot_test	48	static
+test_ipc.c:775:12:rf_spboot_test	32	static
+test_ipc.c:571:12:plc_spboot_test	40	static
+test_ipc.c:881:12:plcrf_boot_test	32	static
+test_ipc.c:19:6:a7_ipc_init	0	static
+test_ipc.c:1205:5:ipc_test_prepare	16	static
+test_ipc.c:1248:6:ipc_reset_test	24	static
+test_ipc.c:1283:6:ipc_cg_test	24	static

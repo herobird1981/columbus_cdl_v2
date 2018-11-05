@@ -1,0 +1,6 @@
+test_tamp.c:264:12:tamp_count_clear	8	static
+test_tamp.c:19:13:display_tamp_time	40	static
+test_tamp.c:227:12:tamp_read	24	static
+test_tamp.c:82:6:tamp_int_handler	8	static
+test_tamp.c:73:12:cmd_help	0	static
+test_tamp.c:96:12:tamp_int	48	static

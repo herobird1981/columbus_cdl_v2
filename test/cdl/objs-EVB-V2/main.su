@@ -1,0 +1,4 @@
+main.c:45:6:create_page_table	0	static
+main.c:62:6:cache_enable	0	static
+main.c:230:5:one_device_test	24	static
+main.c:297:5:main	48	static

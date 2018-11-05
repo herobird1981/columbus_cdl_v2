@@ -1,0 +1,11 @@
+ulpi.c:32:12:ulpi_integrity_check	32	static
+ulpi.c:53:5:ulpi_init	32	static
+ulpi.c:74:5:ulpi_select_transceiver	24	static
+ulpi.c:101:5:ulpi_set_vbus	32	static
+ulpi.c:112:5:ulpi_set_vbus_indicator	40	static
+ulpi.c:139:5:ulpi_set_pd	24	static
+ulpi.c:147:5:ulpi_opmode_sel	24	static
+ulpi.c:174:5:ulpi_serial_mode_enable	16	static
+ulpi.c:189:5:ulpi_suspend	24	static
+ulpi.c:206:12:__ulpi_reset_wait	24	static
+ulpi.c:233:5:ulpi_reset	24	static

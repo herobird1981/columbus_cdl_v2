@@ -1,0 +1,10 @@
+test_sha.c:13:12:cmd_help	0	static
+test_sha.c:159:12:sha_robust	296	static
+test_sha.c:317:12:test_sha384_with_key2	208	static
+test_sha.c:271:12:sha_int	8	static
+test_sha.c:92:12:test_sha256	280	static
+test_sha.c:25:12:test_sha384	280	static
+test_sha.c:257:6:sha_int_handler	8	static
+test_sha.c:18:6:sha_test_init	8	static
+test_sha.c:395:6:sha_reset_test	16	static
+test_sha.c:426:6:sha_cg_test	16	static

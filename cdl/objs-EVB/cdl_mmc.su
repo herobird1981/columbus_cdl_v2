@@ -1,0 +1,12 @@
+cdl_mmc.c:374:6:dwmci_setup_bus.part.4	16	static
+cdl_mmc.c:465:12:dwmci_init_hw	8	static
+cdl_mmc.c:436:13:dwmci_set_ios	8	static
+cdl_mmc.c:200:12:dwmci_send_cmd	56	static
+cdl_mmc.c:374:6:dwmci_setup_bus	0	static
+cdl_mmc.c:513:5:dw_mmc_init	12	static
+cdl_mmc.c:532:15:dwmci_get_raw_int_status	0	static
+cdl_mmc.c:536:15:dwmci_get_int_status	0	static
+cdl_mmc.c:540:6:dwmci_clear_int_status	0	static
+cdl_mmc.c:544:6:dwmci_set_int_mask	0	static
+cdl_mmc.c:548:6:dwmci_enable_int	0	static
+cdl_mmc.c:559:6:dwmci_display_config	8	static

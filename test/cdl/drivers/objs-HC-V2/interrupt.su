@@ -1,0 +1,12 @@
+interrupt.c:18:13:irq_generic_empty_handler	0	static
+interrupt.c:30:13:irq_generic_dispatch_handler	0	static
+interrupt.c:45:5:irq_generic_install_handler	4	static
+interrupt.c:64:5:irq_generic_remove_handler	0	static
+interrupt.c:80:6:irq_generic_enable_int	0	static
+interrupt.c:87:6:irq_generic_disable_int	0	static
+interrupt.c:93:6:irq_generic_clear_int	0	static
+interrupt.c:99:5:irq_generic_config_int	0	static
+interrupt.c:104:6:irq_generic_init	8	static
+interrupt.c:119:6:irq_generic_handler	0	static
+interrupt.c:125:6:enable_interrupts	0	static
+interrupt.c:141:5:disable_interrupts	0	static

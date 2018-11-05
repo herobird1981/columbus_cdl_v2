@@ -1,0 +1,16 @@
+cdl_otp.c:26:6:sw_udelay_10x	0	static
+cdl_otp.c:67:5:otp_prog_bit	4	static
+cdl_otp.c:152:6:otp_get_bit	0	static
+cdl_otp.c:164:5:otp_prog_byte	24	static
+cdl_otp.c:211:6:otp_get_byte	0	static
+cdl_otp.c:220:5:otp_prog	32	static
+cdl_otp.c:241:6:otp_init	8	static
+cdl_otp.c:295:6:otp_enable_int	0	static
+cdl_otp.c:308:6:otp_disable_int	0	static
+cdl_otp.c:321:15:otp_get_raw_int_status	0	static
+cdl_otp.c:326:15:otp_get_int_status	0	static
+cdl_otp.c:331:6:otp_set_int_mask	0	static
+cdl_otp.c:343:6:otp_clear_int	0	static
+cdl_otp.c:348:15:otp_get_sys_status	0	static
+cdl_otp.c:353:6:otp_disable_key	0	static
+cdl_otp.c:359:5:otp_get_key_status	0	static

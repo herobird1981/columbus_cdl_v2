@@ -1,0 +1,238 @@
+#******************************************************************************
+#
+# makedefs - Definitions common to all makefiles.
+#
+#
+#******************************************************************************
+
+VERBOSE=1
+DEBUG=1
+
+#******************************************************************************
+#
+# Get the operating system name.  If this is Cygwin, the .d files will be
+# munged to convert c: into /cygdrive/c so that "make" will be happy with the
+# auto-generated dependencies.
+#
+#******************************************************************************
+os:=${shell uname -s}
+
+#******************************************************************************
+#
+# The compiler to be used.
+#
+#******************************************************************************
+ifndef COMPILER
+COMPILER=gcc
+endif
+
+ifndef OUTPUT
+OUTPUT=objs-$(BOARD_TYPE)
+endif
+
+#******************************************************************************
+#
+# Definitions for using GCC.
+#
+#******************************************************************************
+ifeq (${COMPILER}, gcc)
+
+#
+# Get the prefix for the tools to use.  Use arm-stellaris-eabi if it exists,
+# otherwise fall back to arm-none-eabi.
+#
+ifneq ($(findstring CYGWIN,$(os)),)
+PREFIX ?= arm-none-eabi
+else
+PREFIX ?= armv7l-timesys-linux-gnueabihf
+endif
+
+#
+# The command for calling the compiler.
+#
+CC=${PREFIX}-gcc
+
+#
+# The location of the C compiler
+# ARMGCC_ROOT is used by some makefiles that need to know where the compiler
+# is installed.  It is not used further for normal stellarisware apps
+#
+ARMGCC_ROOT:=${shell dirname '${shell sh -c "which ${CC}"}'}/..
+
+#
+# The flags passed to the assembler.
+#
+AFLAGS=-MD  -D__ASSEMBLY__
+				
+#
+# The flags passed to the compiler.
+#
+CFLAGS=-mfloat-abi=soft \
+       -ffunction-sections \
+       -fdata-sections     \
+       -MD                 \
+       -c \
+       -nostdlib
+
+EXTRA_CFLAGS= -D__KERNEL__ -D__UBOOT__   -D__ARM__  -D__ARM_PCS_VFP \
+	-Wstrict-prototypes -Wno-format-security -fno-builtin -ffreestanding \
+	-fno-stack-protector -fno-delete-null-pointer-checks \
+	-fstack-usage -Wno-format-nonliteral \
+	-mno-thumb-interwork -mabi=aapcs-linux -mword-relocations -fno-pic \
+	-mno-unaligned-access -fno-common -pipe
+
+
+ifeq ($(BOARD_TYPE),HC)
+AFLAGS+=-mcpu=cortex-a7
+CFLAGS+=-mcpu=cortex-a7 -DHC_FPGA_BOARD
+endif
+
+ifeq ($(BOARD_TYPE),HC-V2)
+AFLAGS+=-mcpu=cortex-a7
+CFLAGS+=-mcpu=cortex-a7 -DHC_FPGA_BOARD -DTAPEOUT_V2
+endif
+
+ifeq ($(BOARD_TYPE),EVB)
+AFLAGS+=-mcpu=cortex-a7
+CFLAGS+=-mcpu=cortex-a7 -DEVB_BOARD
+endif
+
+ifeq ($(BOARD_TYPE),EVB-V2)
+AFLAGS+=-mcpu=cortex-a7
+CFLAGS+=-mcpu=cortex-a7 -DEVB_BOARD -DTAPEOUT_V2
+endif
+
+#
+# The command for calling the library archiver.
+#
+AR=${PREFIX}-ar
+
+#
+# The command for calling the linker.
+#
+LD=${PREFIX}-ld
+
+#
+# The flags passed to the linker.
+#
+LDFLAGS=--gc-sections -nostdlib
+
+#
+# Get the location of libgcc.a from the GCC front-end.
+#
+LIBGCC=${shell ${CC} ${CFLAGS} -print-libgcc-file-name}
+
+#
+# Get the location of libc.a from the GCC front-end.
+#
+LIBC=${shell ${CC} ${CFLAGS} -print-file-name=libc.a}
+
+#
+# Get the location of libm.a from the GCC front-end.
+#
+LIBM=${shell ${CC} ${CFLAGS} -print-file-name=libm.a}
+
+#
+# The command for extracting images from the linked executables.
+#
+OBJCOPY=${PREFIX}-objcopy
+OBJDUMP=${PREFIX}-objdump
+#
+# Tell the compiler to include debugging information if the DEBUG environment
+# variable is set.
+#
+ifdef DEBUG
+CFLAGS+=-g -D DEBUG -O2
+else
+CFLAGS+=-g -D DEBUG -O2
+endif
+
+#
+# Add the tool specific CFLAGS.
+#
+CFLAGS+=${CFLAGSgcc}
+
+#
+# Add the include file paths to AFLAGS and CFLAGS.
+#
+IPATH+=${ARMGCC_ROOT}/include
+
+ifneq ($(findstring CYGWIN, ${os}), )
+CYG_IPATH=$(shell cygpath -w $(IPATH))
+AFLAGS+=${patsubst %,-I%,${CYG_IPATH}}
+CFLAGS+=${patsubst %,-I%,${CYG_IPATH}}
+else
+AFLAGS+=${patsubst %,-I%,${subst :, ,${IPATH}}}
+CFLAGS+=${patsubst %,-I%,${subst :, ,${IPATH}}}
+endif
+
+#
+# The rule for building the object file from each C source file.
+#
+${OUTPUT}/%.o: %.c
+	@if [ 'x${VERBOSE}' = x ];                            \
+	 then                                                 \
+	     echo "  CC    ${<}";                             \
+	 else                                                 \
+	     echo ${CC} ${CFLAGS} $(EXTRA_CFLAGS) -D${COMPILER} -o ${@} ${<}; \
+	 fi
+	@mkdir -p `dirname ${@}`
+	@${CC} ${CFLAGS} $(EXTRA_CFLAGS) -D${COMPILER} -o ${@} ${<}
+ifneq ($(findstring CYGWIN, ${os}), )
+	@sed -i -r 's/ ([A-Za-z]):/ \/cygdrive\/\1/g' ${@:.o=.d}
+endif
+
+#
+# The rule for building the object file from each assembly source file.
+#
+${OUTPUT}/%.o: %.S
+	@if [ 'x${VERBOSE}' = x ];                               \
+	 then                                                    \
+	     echo "  AS    ${<}";                                \
+	 else                                                    \
+	     echo ${CC} ${AFLAGS} -D${COMPILER} -o ${@} -c ${<}; \
+	 fi
+	@${CC} ${AFLAGS} -D${COMPILER} -o ${@} -c ${<}
+ifneq ($(findstring CYGWIN, ${os}), )
+	@sed -i -r 's/ ([A-Za-z]):/ \/cygdrive\/\1/g' ${@:.o=.d}
+endif
+
+#
+# The rule for creating an object library.
+#
+${OUTPUT}/%.a:
+	@if [ 'x${VERBOSE}' = x ];     \
+	 then                          \
+	     echo "  AR    ${@}";      \
+	 else                          \
+	     echo ${AR} -cr ${@} ${^}; \
+	 fi
+	@${AR} -cr ${@} ${^}
+
+#
+# The rule for linking the application.
+#
+${OUTPUT}/%.axf:
+	@if [ 'x${SCATTERgcc_${notdir ${@:.axf=}}}' = x ];                    \
+	 then                                                                 \
+	     ldname="${ROOT}/cdl_ddr.ld";                              \
+	 else                                                                 \
+	     ldname="${SCATTERgcc_${notdir ${@:.axf=}}}";                     \
+	 fi;                                                                  \
+	 if [ 'x${VERBOSE}' = x ];                                            \
+	 then                                                                 \
+	     echo "  LD    ${@} ${LNK_SCP}";                                  \
+	 else                                                                 \
+	     echo ${LD} -T $${ldname}                                         \
+	          --entry ${ENTRY_${notdir ${@:.axf=}}}                       \
+	          ${LDFLAGSgcc_${notdir ${@:.axf=}}}                          \
+	          ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^}) ${LIBGCC};                  \
+	 fi;                                                                  \
+	${LD} -T $${ldname}                                                   \
+	      --entry ${ENTRY_${notdir ${@:.axf=}}}                           \
+	      -Map ${@:.axf=.map}                                             \
+	      ${LDFLAGSgcc_${notdir ${@:.axf=}}}                              \
+	      ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^}) ${LIBGCC};
+	@${OBJCOPY} -O binary ${@} ${@:.axf=.bin}
+endif
+

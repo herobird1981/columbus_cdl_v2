@@ -1,0 +1,16 @@
+cdl_qspi.c:893:12:cadence_qspi_write_speed	32	static
+cdl_qspi.c:266:21:cadence_qspi_wait_idle.isra.4	24	static
+cdl_qspi.c:515:12:cadence_qspi_apb_exec_flash_cmd	16	static
+cdl_qspi.c:548:12:cadence_qspi_apb_command_read	40	static
+cdl_qspi.c:1294:12:cadence_qspi_direct_write_read	32	static
+cdl_qspi.c:873:6:cadence_qspi_apb_enter_xip	0	static
+cdl_qspi.c:993:5:cadence_qspi_set_speed	56	static
+cdl_qspi.c:1033:5:cadence_qspi_set_mode	4	static
+cdl_qspi.c:1074:5:cadence_qspi_xfer	88	static
+cdl_qspi.c:1191:15:cadence_qspi_get_int_status	0	static
+cdl_qspi.c:1195:6:cadence_qspi_set_int_mask	0	static
+cdl_qspi.c:1201:6:cadence_qspi_clear_int_status	0	static
+cdl_qspi.c:1206:5:cadence_qspi_init	16	static
+cdl_qspi.c:1232:6:cadence_qspi_set_access_mode	0	static
+cdl_qspi.c:1345:5:cadence_qspi_direct_write	16	static
+cdl_qspi.c:1350:5:cadence_qspi_direct_read	16	static

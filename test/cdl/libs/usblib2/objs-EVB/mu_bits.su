@@ -1,0 +1,2 @@
+mu_bits.c:23:5:MUSB_BitsGet	12	static
+mu_bits.c:72:5:MUSB_BitsSet	16	static

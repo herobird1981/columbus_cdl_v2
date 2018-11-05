@@ -1,0 +1,13 @@
+plat_uds.c:100:13:MGC_NoneFlushBackgroundQueue	0	static
+plat_uds.c:122:16:MGC_NoneUnlock	0	static
+plat_uds.c:172:9:MGC_NoneArmTimer	16	static
+plat_uds.c:186:9:MGC_NoneCancelTimer	0	static
+plat_uds.c:73:16:MGC_NoneDequeueBackgroundItem	16	static
+plat_uds.c:56:16:MGC_NoneQueueBackgroundItem	8	static
+plat_uds.c:338:13:MGC_NoneDestroyController	24	static
+plat_uds.c:144:16:MGC_NoneControllerIsr	8	static
+plat_uds.c:110:16:MGC_NoneLock	0	static
+plat_uds.c:196:9:MGC_NoneControllerIsrPoll	8	static
+plat_uds.c:223:6:MUSB_NoneRunBackground	24	static
+plat_uds.c:356:9:MUSB_InitSystem	64	static
+plat_uds.c:389:9:MUSB_DestroySystem	16	static

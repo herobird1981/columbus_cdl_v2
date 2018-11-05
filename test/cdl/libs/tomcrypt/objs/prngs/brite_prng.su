@@ -1,0 +1,7 @@
+brite_prng.c:13:6:brite_prng_set_reg_base	16	static
+brite_prng.c:17:6:rng_pon	8	static
+brite_prng.c:26:6:rng_read2local	16	static
+brite_prng.c:33:15:rng_readb	8	static
+brite_prng.c:40:5:rng_readl	16	static
+brite_prng.c:50:4:pesudo_rng_readb	16	static
+brite_prng.c:60:15:rng_hw	40	static

@@ -1,0 +1,2 @@
+test_rng.c:302:6:rng_reset_test	0	static
+test_rng.c:307:6:rng_cg_test	0	static

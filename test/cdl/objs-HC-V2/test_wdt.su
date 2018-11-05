@@ -1,0 +1,13 @@
+test_wdt.c:660:12:wdt_reg_dump	8	static
+test_wdt.c:556:12:wdt_int	16	static
+test_wdt.c:607:12:wdt_fly	16	static
+test_wdt.c:328:12:wdt_div	80	static
+test_wdt.c:148:12:wdt_reload	56	static
+test_wdt.c:22:12:wdt_check_counter	48	static
+test_wdt.c:112:12:cmd_help	0	static
+test_wdt.c:542:6:wdt_int_handler	8	static
+test_wdt.c:425:12:wdt_interrupt_timeout	80	static
+test_wdt.c:254:12:wdt_reset	56	static
+test_wdt.c:118:12:wdt_start_stop	16	static
+test_wdt.c:690:6:wdt_reset_test	16	static
+test_wdt.c:724:6:wdt_cg_test	16	static

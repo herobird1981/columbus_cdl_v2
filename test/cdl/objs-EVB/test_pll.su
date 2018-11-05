@@ -1,0 +1,11 @@
+test_pll.c:383:12:clk_status	8	static
+test_pll.c:298:12:arm_child_rate_div	40	static
+test_pll.c:379:12:periph_rate_div	0	static
+test_pll.c:375:12:bus_rate_div	0	static
+test_pll.c:226:12:arm_clk_switch	24	static
+test_pll.c:112:12:pll_freq_src	24	static
+test_pll.c:106:12:cmd_help	0	static
+test_pll.c:22:15:uart_tune_clk_div	0	static
+test_pll.c:74:5:uart_tune_clk_for_baud	8	static
+test_pll.c:90:5:console_pclk_change_cb	8	static
+test_pll.c:95:5:system_timer_pclk_change_cb	8	static

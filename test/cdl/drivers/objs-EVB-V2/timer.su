@@ -1,0 +1,8 @@
+timer.c:43:5:gtimer_timer_init	16	static
+timer.c:64:20:gtime_get_ticks	16	static
+timer.c:91:5:ipc_timer_init	8	static
+timer.c:98:20:ipc_get_tick	0	static
+timer.c:111:20:get_timer	16	static
+timer.c:119:6:udelay	16	static
+timer.c:132:6:mdelay	8	static
+timer.c:140:6:sdelay	16	static

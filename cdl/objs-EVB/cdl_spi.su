@@ -1,0 +1,16 @@
+cdl_spi.c:15:15:brite_spi_read	0	static
+cdl_spi.c:20:6:brite_spi_write	0	static
+cdl_spi.c:25:6:brite_spi_set_int_enable	0	static
+cdl_spi.c:34:15:brite_spi_get_int_status	0	static
+cdl_spi.c:39:6:brite_spi_set_int_mask	0	static
+cdl_spi.c:44:6:brite_spi_set_int_clear	0	static
+cdl_spi.c:58:6:brite_spi_set_speed	8	static
+cdl_spi.c:81:6:brite_spi_enable_txrx	0	static
+cdl_spi.c:91:6:brite_spi_set_txrx_threshold	0	static
+cdl_spi.c:101:6:brite_spi_empty_fifo	0	static
+cdl_spi.c:111:6:brite_spi_dump_status	32	static
+cdl_spi.c:122:6:brite_spi_init_hw	16	static
+cdl_spi.c:200:6:brite_spi_init	12	static
+cdl_spi.c:410:5:brite_spi_xfer	72	static
+cdl_spi.c:447:6:brite_spi_rx_cnt	0	static
+cdl_spi.c:542:15:brite_spi_xfer_slave	72	static

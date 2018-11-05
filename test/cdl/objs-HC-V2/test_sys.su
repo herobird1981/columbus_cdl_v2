@@ -1,0 +1,4 @@
+test_sys.c:517:12:misc_chip_id_test	8	static
+test_sys.c:443:12:prcm_reset_test	24	static
+test_sys.c:51:12:cmd_help	0	static
+test_sys.c:926:12:mem_dumps	16	static

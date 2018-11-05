@@ -1,0 +1,5 @@
+cdl_rng.c:16:6:rng_init	16	static
+cdl_rng.c:27:6:rng_power_ctrl	0	static
+cdl_rng.c:36:6:rng_latch2ddr	0	static
+cdl_rng.c:41:5:rng_rand	0	static
+cdl_rng.c:83:6:rng_rand_buffer	32	static

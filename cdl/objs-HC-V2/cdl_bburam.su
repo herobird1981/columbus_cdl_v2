@@ -1,0 +1,4 @@
+cdl_bburam.c:16:6:brite_bram_init	0	static
+cdl_bburam.c:21:6:brite_bram_readb	4	static
+cdl_bburam.c:30:6:brite_bram_writeb	16	static
+cdl_bburam.c:39:5:brite_bram_check_pending	0	static
